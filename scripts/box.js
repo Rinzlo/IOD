@@ -1,4 +1,3 @@
-<script type="text/javascript">
 $(document).ready(function() {
 	$("#box").mousemove(function(e) {
 		$(this).css('position', 'absolute');
@@ -6,4 +5,3 @@ $(document).ready(function() {
 		$(this).css('top', (e.screenY - 150) + 'px');
 	});
 });
-</script>

@@ -2,29 +2,17 @@
 <html>
 <head>
 	<title>jQuery - Eight</title>
+	<meta charset="utf-8"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<style type="text/css">
-		#box {
-			width:100px;
-			height:100px;
-			background-color:yellow;
-			border:1px solid black;
-		}
+	<script type="text/javascript" src="scripts/box.js"></script>
+	<link rel="stylesheet" href="styles/box.css">
 	</style>
 </head>
 <body>
 
-<div id="box">&nbsp;</div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$("#box").mousemove(function(e) {
-		$(this).css('position', 'absolute');
-		$(this).css('left', (e.screenX - 50) + 'px');
-		$(this).css('top', (e.screenY - 150) + 'px');
-	});
-});
-</script>
+before
+<div id="box">inside &nbsp; here</div>
+after
 
 </body>
 </html>
