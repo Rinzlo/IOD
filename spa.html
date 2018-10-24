@@ -8,12 +8,12 @@
 		<script type="text/javascript" src="scripts/jQuery/jquery.ba-hashchange.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/jquery.cookie.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/spa.js"></script>
-		<script type="text/javascript" src="scripts/jQuery/login.js"></script> 
+		<script type="text/javascript" src="scripts/jQuery/login.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/signup.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/resetPassword.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/sendLink.js"></script> 
-		<script type="text/javascript" src="scripts/jQuery/data.js"></script> 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- <script type="text/javascript" src="scripts/jQuery/data.js"></script> -->
+		<script type="text/javascript" src="scripts/jQuery/light.js"></script> 
 		<title>Single Page App</title>
 		<style type="text/css">	
 			.page { display: none; }
@@ -43,16 +43,25 @@
 		<!-- Home Page -->
 		<div id="homePage" class="page">
 			<h1>Home</h1>
+			<p>Hello World<p>
 		</div>
 		
 		<!-- About Page -->
 		<div id="aboutPage" class="page">
 			<h1>About</h1>       
+			<p>Here is the about page for device.</p>
 		</div>
 		
 		<!-- Contact Page -->
 		<div id="contactPage" class="page">
 			<h1>Contact</h1>
+			<fieldset id="contactInfo">
+				<strong>COMP490 MEME TEAM</strong><br><br>
+				Address: 0000 Xxx, Northridge, CA 00000<br>
+				Tel:     (000) 000 - 0000<br>
+				Fax:     (000) 000 - 0000<br>
+				Email:   testmail.comp490@gmail.com<br>
+			</fieldset>
 		</div>
 		
 		<!-- Login Form -->
@@ -173,8 +182,10 @@
 			<fieldset id="showData"><br>
 				<div id="outputData">Status:</div><br>
 				Light:
-				<input value="On" type="button" id="onButton" class="func light"></input>
-				<input value="Off" type="button" id="offButton" class="func light"></input>
+				<input value="On" type="button" id="onButton" class="light"></input>
+				<input value="Off" type="button" id="offButton" class="light"></input><br><br>
+				Brightness:
+				<input type="range" min="0" max="255", step="1" id="lightSlider"></input>
 			</fieldset>
 		</div>
 		

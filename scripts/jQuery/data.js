@@ -5,7 +5,7 @@ $(document).ready(function() {
 		}else{
 			$on = false;
 		}
-		console.log($on);
+		console.log($bri);
 		$.ajax({
 			type: 'POST',
 			url: 'http://localhost/scripts/php/data.php',

@@ -1,8 +1,13 @@
 $(document).ready(function() {
+	$('#txtUsername').val($.cookie('Username'));
+	$('#txtPassword').val($.cookie('Password'));
 	$('#submitLogin').click(function(e) {
 		if($('#chbRememberMe').val() == "on"){
-			$.cookie("Username", $('#txtUsername').val(), {expires: 14});
-			$.cookie("Password", $('#txtPassword').val(), {expires: 14});
+			$.cookie('Username', $('#txtUsername').val(), {expires: 14});
+			$.cookie('Password', $('#txtPassword').val(), {expires: 14});
+		}else{
+			$.removeCookie('Username');
+			$.removeCookie('Password');
 		}
 		$.ajax({
 			type: 'POST',
