@@ -6,14 +6,17 @@
 		<meta charset="UTF-8" />
 		<script type="text/javascript" src="scripts/jQuery/jquery-3.3.1.min.js"></script>    
 		<script type="text/javascript" src="scripts/jQuery/jquery.ba-hashchange.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
 		<script type="text/javascript" src="scripts/jQuery/jquery.cookie.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/spa.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/login.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/signup.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/resetPassword.js"></script>
 		<script type="text/javascript" src="scripts/jQuery/sendLink.js"></script> 
-		<!-- <script type="text/javascript" src="scripts/jQuery/data.js"></script> -->
 		<script type="text/javascript" src="scripts/jQuery/light.js"></script> 
+		<script type="text/javascript" src="scripts/jQuery/lightSlider.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/lightStatus.js"></script>
 		<title>Single Page App</title>
 		<style type="text/css">	
 			.page { display: none; }
@@ -181,11 +184,14 @@
 			<div id="username"></div><br>
 			<fieldset id="showData"><br>
 				<div id="outputData">Status:</div><br>
-				Light:
-				<input value="On" type="button" id="onButton" class="light"></input>
-				<input value="Off" type="button" id="offButton" class="light"></input><br><br>
-				Brightness:
-				<input type="range" min="0" max="255", step="1" id="lightSlider"></input>
+				<div id="lightInput">
+					Light:
+					<input value="On" type="button" id="onButton" class="light"></input>
+					<input value="Off" type="button" id="offButton" class="light"></input><br><br>
+					Brightness:
+					<span id="showBrightness"></span><br><br>
+					<div id="lightSlider"></div>
+				</div>
 			</fieldset>
 		</div>
 		

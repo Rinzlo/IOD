@@ -222,3 +222,20 @@ fieldset{
 #messageSignUp, #messageLogin, #messageEmail{
     color: red;
 }
+
+/*User Page*/
+div.ui-slider{
+	width: 50%;
+}
+
+/*
+#onButton{
+	background-color: orange;
+	box-shadow: 0px 4px 0 rgba(0, 0, 0, .7);
+}
+
+#offButton{
+	background-color: #222222;
+	box-shadow: none;
+}
+*/

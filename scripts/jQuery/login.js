@@ -23,7 +23,7 @@ $(document).ready(function() {
 				location.hash = hash;
 				$(".page").css("display", "none");
 				$(location.hash).css("display", "block");
-				$('#username').html("Welcome, " + data + " !!");
+				$('#username').html("Welcome, " + data + "!!");
 				$('#userButtonLogin').show();
 				$('#userButtonLogout').hide();
 				$('#logout').show();

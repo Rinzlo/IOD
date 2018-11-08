@@ -29,7 +29,7 @@ $(function(){
 	$(window).hashchange(function(){
 		if(completeFlg === true){
 			clearPage();
-			displayPage(location.hash);        
+			displayPage(location.hash);  
 		}else{
 			location.hash = "#three";    
 			return false;
