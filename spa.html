@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8" />
+		<script type="text/javascript" src="scripts/jQuery/jquery-3.3.1.min.js"></script>    
+		<script type="text/javascript" src="scripts/jQuery/jquery.ba-hashchange.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+		<script type="text/javascript" src="scripts/jQuery/jquery.cookie.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/spa.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/login.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/signup.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/resetPassword.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/sendLink.js"></script> 
+		<script type="text/javascript" src="scripts/jQuery/light.js"></script> 
+		<script type="text/javascript" src="scripts/jQuery/lightSlider.js"></script>
+		<script type="text/javascript" src="scripts/jQuery/lightStatus.js"></script>
+		<title>Single Page App</title>
+		<style type="text/css">	
+			.page { display: none; }
+		</style>
+		<link rel="stylesheet" href="css/spa.css" type="text/css" />
+	</head>
+	
+	
+	<body>
+		<!--Top Menu bar -->
+		<header>
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><span></span></label>
+				<span id="status" style="float: right"><a class="btn" data-hash="userPage" id="userButtonLogin">MyPage</a></span>
+				<span id="status" style="float: right"><a class="btn" data-hash="loginPage" id="userButtonLogout">Login</a></span>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+					<input type="button" class="btn menu" data-hash="homePage" value="Home" id="homeButton"></button> 
+					<input type="button" class="btn menu" data-hash="aboutPage" value="About"></button> 
+					<input type="button" class="btn menu" data-hash="contactPage" value="Contact"></button> 
+					<input type="button" class="btn menu" data-hash="loginPage" value="Logout" id="logout"></button> 
+				</div>
+			</div>
+		</header>
+		
+		<!-- Home Page -->
+		<div id="homePage" class="page">
+			<h1>Home</h1>
+			<p>Hello World<p>
+		</div>
+		
+		<!-- About Page -->
+		<div id="aboutPage" class="page">
+			<h1>About</h1>       
+			<p>Here is the about page for device.</p>
+		</div>
+		
+		<!-- Contact Page -->
+		<div id="contactPage" class="page">
+			<h1>Contact</h1>
+			<fieldset id="contactInfo">
+				<strong>COMP490 MEME TEAM</strong><br><br>
+				Address: 0000 Xxx, Northridge, CA 00000<br>
+				Tel:     (000) 000 - 0000<br>
+				Fax:     (000) 000 - 0000<br>
+				Email:   testmail.comp490@gmail.com<br>
+			</fieldset>
+		</div>
+		
+		<!-- Login Form -->
+		<div id="loginPage" class="page">
+			<div><br>
+				<fieldset id="loginForm">
+					<h1>Ӎҽӎҿ Ҭҿѧӎ</h1><br>
+					<div id="messageLogin"></div><br>
+					<!-- <p>Please log in.</p><hr> -->
+					<form id="login">
+						<strong>Username:</strong><br>
+						<input type="text" id="txtUsername" name="loginUsername" placeholder="Enter username"><br>
+						<strong>Password:</strong><br>
+						<input type="password" id="txtPassword" name="loginPassword" placeholder="Enter password"><br>
+						<input name="chbRememberMe" checked="checked" type="checkbox" id="chbRememberMe">
+						Remember me<br>
+						<input value="Log in" type="button" id="submitLogin" data-hash="homePage" class="func"></input><br><br>
+						<span class="forgotPassword">
+							 <a class="btn" data-hash="forgotPassword" id="forgotPass">Forgot password?</a>
+						</span><br><br>
+						If you don't have an account...<br>
+						<input value="Sign Up" type="button" id="toSignUpPage" data-hash="signupPage" class="btn func"></input><br>
+					</form>
+				</fieldset><br>
+			</div>
+		</div>
+		
+		<!-- Sign Up Form -->
+		<div id="signupPage" class="page"><br>
+			<fieldset id ="signUpForm">
+				<h1>Sign Up</h1>
+				<p>Please input the required information to create an account.</p>
+				<div id="messageSignUp"></div><hr><br>
+				<form id="login" action="http://localhost/phpinfo.php" method="POST">
+					<label id="email">
+						<strong>Email:</strong><br>
+						<input name="txtEmail" type="text" id="signupEmail"><br>
+					</label>
+					<label id="login_username">
+						<strong>Username:</strong><br>
+						<input name="txtUsername" type="text" id="signupUsername" >
+					</label><br>
+					<label id="login_password">
+						<strong>Password:</strong><br>
+						<input name="txtPassword" type="password" id="signupPassword"><br>
+					</label>
+					<label id="repeat_pass">
+						<strong>Repeat Password:</strong><br>
+						<input name="txtPassRepeat" type="password" id="signupPassRepeat"><br>
+					</label>
+					<label id="login_remember">
+						<input name="chbRememberMe" type="checkbox" id="chbRememberMe">
+						Remember me on this computer
+					</label><br>
+					<input value="Sign Up" type="button" id="submitSignUp" data-hash="loginPage" class="func"></input>
+					<input value="Cancel" type="button" id="cancelSignUp" data-hash="loginPage" class="btn func"></input><br><br>
+				</form>
+			</fieldset>
+		</div>
+		
+		<!-- Forgot Password Page-->
+		<div id="forgotPassword" class="page"><br>
+			<fieldset id="sendLinkForm">
+				<h1>Forgot Password?</h1>
+				<p>Please put your email and send a link to the password reset form.</p><br><br>
+				<div id="messageEmail"></div><br>
+				<strong>Email:</strong><br>
+				<input name="sendEmail" type="text" id="txtEmail"><br>
+				<input value="Send email" type="button" id="sendLink" class="func"></input>
+			</fieldset><br>
+			<!-- Test --> <input type="button" class="btn" data-hash="resetPasswordPage" value="Reset Test" id="resetTest"></button> 
+		</div>
+		
+		<!-- Email sent Page -->
+		<div id="emailSentPage" class="page"><br>
+			<fieldset id="emailSent">
+				The email has been sent to your address.<br>
+				Please confirm and go to the link.<br>
+			</fieldset>
+		</div>
+		
+		<!-- Reset Password Page-->
+		<div id="resetPasswordPage" class="page"><br>
+			<fieldset id="resetPasswordForm">
+				<h1>Reset Password</h1>
+				<p>Please put your username new password.</p><br><br>
+				<div id="messageReset"></div><br>
+				<strong>Username:</strong><br>
+				<input name="resetUsername" type="text" id="resetUsername"><br>
+				<strong>New Password:</strong><br>
+				<input name="resetPassword" type="password" id="resetPassword"><br>
+				<strong>Repeat Password:</strong><br>
+				<input name="resetPasswordRepeat" type="password" id="resetPasswordRepeat"><br>
+				<input value="Reset Password" type="button" id="passwordResetButton" class="func"></input>
+			</fieldset>
+		</div>
+		
+		<!-- Signup Confirmation Page -->
+		<div id="signupConfirmPage" class="page"><br>
+			<fieldset id="signupConfirm">
+				You are correctly registered. Please log in.<br><br>
+				<input value="Log in" type="button" class="btn func" id="signupConfirm" data-hash="loginPage"></input>
+			</fieldset>
+		</div>
+		
+		<!-- Reset Confirmation Page -->
+		<div id="resetConfirmPage" class="page"><br>
+			<fieldset id="resetConfirm">
+				Your password is changed. Please log in.<br><br>
+				<input value="Log in" type="button" class="btn func" id="resetConfirm" data-hash="loginPage"></input>
+			</fieldset>
+		</div>
+		
+		<!-- User Page -->
+		<div id="userPage" class="page">
+			<h1>User Page</h1>
+			<div id="username"></div><br>
+			<fieldset id="showData"><br>
+				<div id="outputData">Status:</div><br>
+				<div id="lightInput">
+					Light:
+					<input value="On" type="button" id="onButton" class="light"></input>
+					<input value="Off" type="button" id="offButton" class="light"></input><br><br>
+					Brightness:
+					<span id="showBrightness"></span><br><br>
+					<div id="lightSlider"></div>
+				</div>
+			</fieldset>
+		</div>
+		
+	</body>
+</html>
