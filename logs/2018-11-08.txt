@@ -1,0 +1,8 @@
+[08-Nov-2018 01:35:19 UTC] Uncaught exception: 'Exception' with message 'Method addNewAction (in controller App\Controllers\Posts) not found'
+Stack trace: #0 C:\wamp64\www\MVC\public\index.php(28): Core\Router->dispatch('posts/add-new-a...')
+#1 {main}
+Thrown in 'C:\wamp64\www\MVC\Core\Router.php' on line 110
+[08-Nov-2018 01:37:22 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\MVC\public\index.php(28): Core\Router->dispatch('posts/')
+#1 {main}
+Thrown in 'C:\wamp64\www\MVC\Core\Router.php' on line 116

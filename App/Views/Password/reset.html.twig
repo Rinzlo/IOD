@@ -1,0 +1,78 @@
+{% extends "base.html.twig" %}
+{% block title %}Reset Password{% endblock %}
+
+{% block footer %}
+    <script src="js/hideShowPassword.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            /**
+             * sets up validation on our form
+             */
+            $('#formPassword').validate({
+                rules: {
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        validPassword: true
+                    },
+                    password_confirmation: {
+                        equalTo: '#inputPassword'
+                    }
+                },
+                messages: {
+                    email: {
+                        remote: 'email already taken'
+                    }
+                }
+            });
+
+            /**
+             * Show passowrd toggle button
+             */
+            $('#inputPassword').hideShowPassword({
+                show: false,
+                innerToggle: 'focus'
+            });
+            $('#inputPasswordConfirmation').hideShowPassword({
+                show: false,
+                innerToggle: 'focus'
+            });
+        });
+    </script>
+
+{% endblock %}
+
+{% block body %}
+
+    <h1>Reset Password</h1>
+
+    {% if user.errors is not empty %}
+        <p>Errors:</p>
+        <ul>
+            {% for error in user.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post" action="password/reset-password" id="formPassword">
+
+        <input type="hidden" name="token" value="{{ token }}">
+
+        <div>
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" name="password" placeholder="Password" required />
+        </div>
+        <div>
+            <label for="inputPasswordConfirmation">Password</label>
+            <input type="password" id="inputPasswordConfirmation" name="password_confirmation" placeholder="Repeat Password" required />
+        </div>
+
+        <button type="submit">Reset Password</button>
+
+    </form>
+
+{% endblock %}

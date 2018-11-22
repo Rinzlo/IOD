@@ -1,0 +1,12 @@
+[20-Nov-2018 00:01:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\Arcaic\public\index.php(49): Core\Router->dispatch('accounts/js/hid...')
+#1 {main}
+Thrown in 'C:\wamp64\www\Arcaic\Core\Router.php' on line 116
+[20-Nov-2018 00:01:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\Arcaic\public\index.php(49): Core\Router->dispatch('accounts/js/app...')
+#1 {main}
+Thrown in 'C:\wamp64\www\Arcaic\Core\Router.php' on line 116
+[20-Nov-2018 00:01:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\Arcaic\public\index.php(49): Core\Router->dispatch('accounts/accoun...')
+#1 {main}
+Thrown in 'C:\wamp64\www\Arcaic\Core\Router.php' on line 116

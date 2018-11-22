@@ -1,0 +1,21 @@
+{
+    "require": {
+        "twig/twig": "^2.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/message": "^1.7",
+        "phpmailer/phpmailer": "^6.0",
+        "dapphp/securimage": "^4.0",
+        "google/recaptcha": "^1.2"
+    },
+  "autoload": {
+    "psr-4": {
+        "Core\\": "Core/",
+        "App\\":  "App/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
