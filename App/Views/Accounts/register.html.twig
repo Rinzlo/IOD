@@ -1,0 +1,98 @@
+{% extends "base.html.twig" %}
+{% block title %}Sign up{% endblock %}
+
+{% block footer %}
+    <script src="/{{ app }}/public/js/hideShowPassword.min.js"></script>
+    <script src="/{{ app }}/public/js/app.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            /**
+             * sets up validation on our form
+             */
+            $('#formSignup').validate({
+                rules: {
+                    username: 'required',
+                    email: {
+                        required: true,
+                        email: true,
+                        remote: '/{{ app }}/accounts/validate-email'
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        validPassword: true
+                    },
+                    password_confirmation: {
+                        equalTo: '#inputPassword'
+                    }
+                },
+                messages: {
+                    email: {
+                        remote: 'email already taken'
+                    }
+                }
+            });
+
+            /**
+             * Show passowrd toggle button
+             */
+            $('#inputPassword').hideShowPassword({
+                show: false,
+                innerToggle: 'focus'
+            });
+            $('#inputPasswordConfirmation').hideShowPassword({
+                show: false,
+                innerToggle: 'focus'
+            });
+        });
+    </script>
+
+{% endblock %}
+
+{% block body %}
+
+    <h1>Sign up</h1>
+
+    {% if user.errors is not empty %}
+        <p>Errors:</p>
+        <ul>
+            {% for error in user.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post" action="/{{ app }}/accounts/create" id="formSignup">
+
+        <div>
+            <label for="inputName">Username</label>
+            <input id="inputName" name="username" placeholder="Username" value="{{ user.username }}" autofocus required />
+        </div>
+        <div>
+            <label for="inputEmail">Email address</label>
+            <input id="inputEmail" name="email" placeholder="email address" value="{{ user.email }}" required type="email" />
+        </div>
+        <div>
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" name="password" placeholder="Password" required />
+        </div>
+        <div>
+            <label for="inputPasswordConfirmation">Password Confirmation</label>
+            <input type="password" id="inputPasswordConfirmation" name="password_confirmation" placeholder="Repeat Password" required />
+        </div>
+        {#<div>#}
+            {#<img id="captcha" src="/{{ app }}/public/dapphp/securimage/securimage_show.php" alt="CAPTCHA Image" />#}
+
+            {#<input type="text" name="captcha_code" size="10" maxlength="6" />#}
+            {#<a href="#" onclick="document.getElementById('captcha').src = '/{{ app }}/public/dapphp/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>#}
+        {#</div>#}
+
+        <div class="g-recaptcha" data-sitekey="{{ public }}"></div>
+
+        <button type="submit">Sign up</button>
+
+    </form>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+{% block title %}Success{% endblock %}
+{% block body %}
+
+    <h1>Registered!</h1>
+
+    <p>Success! Thank you for signing up.</p>
+
+    <p>Please check your email to activate your account</p>
+
+    <a href="/{{ app }}/">Home</a> <a href="/{{ app }}/login">Log out</a>
+
+{% endblock %}
