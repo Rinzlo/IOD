@@ -17,19 +17,16 @@ $(document).ready(function() {
 		
 		messages:{
 			loginUsername: {
-				required: "Enter Username.<br>"
+				required: "Enter Username."
 			},
 			loginPassword: {
-				minlength: "Enter more than 6 characters.<br>"
+				minlength: "Enter more than 6 characters."
 			},
 			loginEmail: {
-				email: "Non valid email.<br>"
+				email: "Non valid email."
 			}
 		},
 		
-		errorPlacement: function(err, elem){
-			err.appendTo($('p'));
-		}
 	});
 	$('form').validate();
 });

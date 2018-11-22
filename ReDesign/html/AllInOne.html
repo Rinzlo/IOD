@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/ReHome.css" type="text/css" />
+		<link rel="stylesheet" href="../css/loginPage.css" type="text/css" />
+		<link rel="stylesheet" href="../css/AllInOne.css" type="text/css" />
+		
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.js"></script>
+		<script type="text/javascript" src="../js/jquery.validate.min.js"></script>  
+		<script type="text/javascript" src="../js/jquery.ba-hashchange.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+		<script type="text/javascript" src="../js/pageChange.js"></script>
+		<script type="text/javascript" src="../js/testValidate.js"></script>  
+		<style type="text/css">	
+			.page { display: none; }
+		</style>
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header>
+			<div id="header">
+				<!-- <img src="../resources/Menu.png" id="menuImage" class="btn" width=60px height=60px> -->
+				<img src="../resources/IOD_Logo.png" id="logoImage" width=180px height=100px>
+				<img src="../resources/Home.png" id="homeImage" class="btn" data-hash="homePage" width=60px height=60px>
+			</div>
+			
+			<div id="nav-drawer">
+				<input id="nav-input" type="checkbox" class="nav-unshown">
+				<label id="nav-open" for="nav-input"><span><img src="../resources/Menu.png" id="menuImage" class="btn" width=60px height=60px></span></label>
+				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+				<div id="nav-content">
+					<input type="button" class="btn menu" data-hash="homePage" value="Home" id="homeButton"></button> 
+					<input type="button" class="btn menu" data-hash="aboutPage" value="About"></button> 
+					<input type="button" class="btn menu" data-hash="contactPage" value="Contact"></button> 
+					<input type="button" class="btn menu" data-hash="loginPage" value="Logout" id="logout"></button> 
+				</div>
+			</div>
+			
+		</header>
+		
+		<!-- Login Page -->
+		<div id="loginPage" class="page">
+			<div id="container">
+				<!-- <h1>Ӎҽӎҿ Ҭҿѧӎ</h1> -->
+				<table>
+					<form>
+						<!-- <label for="userName"><b>Username: </b> -->
+						<input type="username" placeholder="User Name" name="userName" id="inputUserName" required><br><br>
+						<!-- </label><br><br> -->
+									<!-- <label for="password"><b>Password: </b> -->
+						<input type="password" placeholder="Password" name="password" id="Password" required><br><br>
+						<!-- </label><br><br> -->
+						<button type="login" id="submitLogin">Login</button><br>
+						<!-- <label> -->
+							<!-- <input type="checkbox" checked="checked" name="remMe">Remember Me -->
+						<!-- </label><br> -->
+						<button type="forgotUserName" id="forUser">Forgot Username</button><br>
+						<button type="forgotPassword" id="forPass">Forgot Password</button>
+					</form>
+				</table>
+			</div>
+		</div>
+		
+		<!-- HomePage -->
+		<div id="homePage" class="page"><br><br>
+			<input type="button" value="MY DEVICES" id="myDevices" class="btn" data-hash="myDevicePage"><br><br>
+			<input type="button" value="USAGE STATISTICS" id="usageStatistics" class="btn" data-hash="usageStatisticsPage"><br><br>
+			<input type="button" value="ADD DEVICES" id="addDevices" class="btn" data-hash="addDevicesPage"><br><br>
+			<input type="button" value="ADD USERS" id="addUsers" class="btn" data-hash="addUsersPage"><br>
+			<p id="copyright">&copy; Meme Team All Rights Reserved</p>
+		</div>
+		
+		<!-- MyDevicePage -->
+		<div id="myDevicePage" class="page">
+			MyDevice<br>
+			MyDevice<br>
+			MyDevice<br>
+		</div>
+	</body>
+</html>
