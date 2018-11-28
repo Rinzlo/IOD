@@ -1,0 +1,172 @@
+[26-Nov-2018 20:38:24 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:38:24 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:38:24 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:43 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:43 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:39:43 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:47 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:47 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:48 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:48 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:48 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:40:48 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:48:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:49:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:49:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Menu.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 20:49:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('IOD_Logo.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[26-Nov-2018 21:35:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('css/btn.png')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116

@@ -1,14 +1,29 @@
 {% extends "base.html.twig" %}
 {% block title %}Home{% endblock %}
+{% block css %}
+<!-- <link rel="stylesheet" href="../ReHome.css" type="text/css" media="screen"> -->
+{% endblock %}
 {% block body %}
 
-    <h1>Welcome</h1>
+    <!-- <h1>Welcome</h1> -->
 
     {% if current_user %}
-        Hello {{ current_user.username }}.
-         <a href="/{{ app }}/logout">Log out</a>
+        <!-- Hello {{ current_user.username }}. -->
+        <div id="main"><br><br>
+            <input type="button" value="MY DEVICES" id="myDevices" class="btn_home"><br><br>
+            <input type="button" value="USAGE STATISTICS" id="usageStatistics" class="btn_home"><br><br>
+            <input type="button" value="ADD A DEVICE" id="addDevice" class="btn_home"><br><br>
+            <input type="button" value="MANAGE USERS" id="manageUsers" class="btn_home"><br>
+            <p class="copyright">&copy; Meme Team All Rights Reserved</p>
+         </div>
+        <!-- <a href="/{{ app }}/logout">Log out</a> -->
     {% else %}
-        <a href="/{{ app }}/login">Login</a> or <a href="/{{ app }}/accounts/register">Register</a>
+        <div id="main"><br><br>
+            <a href="/{{ app }}/login"><input type="button" value="LOGIN" id="loginButton" class="btn_home"></a><br><br>
+            <a href="/{{ app }}/accounts/register"><input type="button" value="REGISTER" id="registerButton" class="btn_home"></a><br><br>
+            <p class="copyright">&copy; Meme Team All Rights Reserved</p>
+            <!-- <a href="/{{ app }}/login">Login</a> or <a href="/{{ app }}/accounts/register">Register</a><br> -->
+        </div>
     {% endif %}
 
 {% endblock %}
