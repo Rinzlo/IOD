@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="/{{ app }}/css/style.css">
+    <link rel="stylesheet" href="/{{ app }}/css/ReHome.css">
+    <link rel="stylesheet" href="/{{ app }}/css/Hamburger.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-
+    <header>
+		<div id="nav-drawer">
+			<img src="/{{ app }}/images/Menu.png" id="menuImage" width=60px height=60px class="btn_menu_drawer head">
+			<nav>
+			    <div id="user"><br>
+					<!-- <img src="/{{ app }}/images/Menu.png" id="menuImageClose" width=60px height=60px class="btn_menu_drawer"> -->
+			        <img src="/{{ app }}/images/My_Profile_Icon.png" id="userImage" width=60px height=60px><br><br>
+					<label id="userName">{{ current_user.username }}</label>
+			    </div>
+			    <div id="menuButtons">
+					<button class="btn_menu"><img src="/{{ app }}/images/My_Profile_Button.png" class="menuIcon" align="center"><span class="menuText">My Profile</span></button>
+					<button class="btn_menu"><img src="/{{ app }}/images/Help_Icon.png" class="menuIcon" align="center"><span class="menuText">Help</span></button>
+					<button class="btn_menu"><img src="/{{ app }}/images/Support_Icon.png" class="menuIcon" align="center"><span class="menuText">Support</span></button>
+					<button class="btn_menu"><img src="/{{ app }}/images/Devices_Icon.png" class="menuIcon" align="center" id="supportedDevicesIcon"><span class="menuText" id="supportedDevicesText">Supported Devices</span></button>
+					<a href="/{{ app }}/logout"><button class="btn_menu"><img src="/{{ app }}/images/Logout_Icon.png" class="menuIcon" align="center"><span class="menuText">Logout</span></button></a>
+					<input type="button" value="Close Menu" class="btn_menu_drawer btn_menu" id="closeButton">
+	    		</div>
+			</nav>
+			<img src="/{{ app }}/images/IOD_Logo.png" id="logoImage" width=180px height=100px class="head">
+			<img src="/{{ app }}/images/Home.png" id="homeImage" width=60px height=60px class="head">
+		</div>
+	</header>
     {% for message in flash_messages %}
         <div class="alert alert-{{ message.type }}">
             {{ message.body }}
@@ -22,6 +45,14 @@
             crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script>
+        $(function(){
+            $('.btn_menu_drawer').click(function(){
+                $('nav').toggleClass('open');
+                //$('#main').toggleClass('btn_menu_drawer');
+            });
+        });
+    </script>
 
     {% block footer %}
     {% endblock %}
