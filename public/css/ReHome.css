@@ -5,43 +5,59 @@ html{
 }
 */
 
-header{
+body{
+	margin: 0;
+}
+
+#nav-drawer{
 	background: #605C5C;
 	border-color: #707070;
-	width: 375px;
+	//width: 375px;
+	width: 40%;
 	height: 120px;
+	text-align: center;
+	position: relative;
 }
+
 
 .head{
 	position: absolute;
 }
 
 #menuImage{
-	top: 40px;
-	left: 40px;
+	top: 25%;
+	left: 10%;
 	cursor: pointer;
 }
 
 #logoImage{
-	top: 20px;
-	left: 105px;
+	//position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	top: 50%;
+	left 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
 }
 
 #homeImage{
-	top: 40px;
-	left: 290px;
+	top: 25%;
+	right: 10%;
 	cursor: pointer;
 }
 
 #main{
 	background: #46474A;
 	border-color: #707070;
-	width: 375px;
+	//width: 375px;
+	width: 40%;
 	height: 547px;
 }
 
 .btn_home{
-    	width: 300px;
+	width: 80%;
     	height: 85px;
     	margin: 0 auto;
     	padding: 15px 0;
@@ -63,7 +79,5 @@ header{
 	color: blue;
 	text-align: center;
 	font-size: 15px;
-	position: absolute;
-	bottom: 20px;
-	left: 85px;
+	position: relative;
 }

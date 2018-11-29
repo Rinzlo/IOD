@@ -1,5 +1,6 @@
 nav {
-	width: 300px;
+	//width: 300px;
+	width: 80%;
 	height: 667px;
 	transition: all 0.2s;
 	transform: translateX(-250%);
