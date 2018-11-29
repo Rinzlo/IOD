@@ -13,7 +13,8 @@ body{
 	background: #605C5C;
 	border-color: #707070;
 	//width: 375px;
-	width: 40%;
+	//width: 40%;
+	width: 100%;
 	height: 120px;
 	text-align: center;
 	position: relative;
@@ -52,7 +53,8 @@ body{
 	background: #46474A;
 	border-color: #707070;
 	//width: 375px;
-	width: 40%;
+	//width: 40%;
+	width: 100%;
 	height: 547px;
 }
 
