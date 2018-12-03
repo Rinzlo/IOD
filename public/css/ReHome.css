@@ -9,6 +9,9 @@ body{
 	margin: 0;
 }
 
+a{
+	text-decoration: none;
+}
 #nav-drawer{
 	background: #605C5C;
 	border-color: #707070;
@@ -56,6 +59,7 @@ body{
 	//width: 40%;
 	width: 100%;
 	height: 547px;
+	text-align: center;
 }
 
 .btn_home{
@@ -81,5 +85,8 @@ body{
 	color: blue;
 	text-align: center;
 	font-size: 15px;
-	position: relative;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, 0%);
 }

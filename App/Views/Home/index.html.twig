@@ -10,7 +10,7 @@
     {% if current_user %}
         <!-- Hello {{ current_user.username }}. -->
         <div id="main"><br><br>
-            <input type="button" value="MY DEVICES" id="myDevices" class="btn_home"><br><br>
+            <a href="/{{ app }}/Accounts/my-devices"><input type="button" value="MY DEVICES" id="myDevices" class="btn_home"></a><br><br>
             <input type="button" value="USAGE STATISTICS" id="usageStatistics" class="btn_home"><br><br>
             <input type="button" value="ADD A DEVICE" id="addDevice" class="btn_home"><br><br>
             <input type="button" value="MANAGE USERS" id="manageUsers" class="btn_home"><br>
