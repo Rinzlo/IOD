@@ -1,0 +1,57 @@
+
+#lightBulbImage{
+	top: 30px;
+}
+
+
+.offImage{
+	top: 180px;
+	cursor: pointer;
+}
+
+/*
+#lightSlider{
+	text-align: center;
+	width: 400px;
+}
+*/
+
+#lightSlider{
+	position: relative;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	width:300px;
+	
+}
+
+#labelBrightness{
+	color: white;
+	font-size: 20px;
+}
+
+#showBrightness{
+	color: white;
+	font-size: 20px;
+}
+
+#brightnessSlider{
+	top: 310px;
+	cursor: pointer;
+}
+
+#usageStats{
+	top: 390px;
+	cursor: pointer;
+}
+
+
+#copyright{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 345px;
+}
+/*end container id*/

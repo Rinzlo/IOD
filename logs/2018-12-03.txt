@@ -1,0 +1,55 @@
+[03-Dec-2018 04:49:49 UTC] Uncaught exception: 'Exception' with message 'Method myDevicesAction not found in controller App\Controllers\Home'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#1 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Home/myDevices')
+#2 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Controller.php' on line 44
+[03-Dec-2018 04:50:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('myDevices')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 04:56:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('my_devices')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 05:09:05 UTC] Uncaught exception: 'Twig_Error_Loader' with message 'Unable to find template "Accounts/my_devices.html.twig" (looked into: /Applications/MAMP/htdocs/web-app/App/Views).'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('Accounts/my_dev...')
+#1 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('Accounts/my_dev...')
+#2 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('Accounts/my_dev...')
+#3 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('Accounts/my_dev...')
+#4 /Applications/MAMP/htdocs/web-app/Core/View.php(76): Twig_Environment->render('Accounts/my_dev...', Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('Accounts/my_dev...', Array)
+#6 /Applications/MAMP/htdocs/web-app/App/Controllers/Accounts.php(18): Core\View::renderTemplate('Accounts/my_dev...')
+#7 [internal function]: App\Controllers\Accounts->myDevicesAction()
+#8 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#10 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/my-dev...')
+#11 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Loader/Filesystem.php' on line 226
+[03-Dec-2018 05:25:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/philip...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 05:41:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/philip...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 06:14:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/Off.pn...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 06:14:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/bright...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 06:14:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/usageS...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 06:15:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('images/brightne...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 06:15:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('images/usageSta...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
