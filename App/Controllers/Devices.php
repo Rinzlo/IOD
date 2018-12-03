@@ -1,18 +1,31 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: Windlo
- * Date: 12/3/2018
- * Time: 12:08 AM
- */
+
+declare(strict_types=1);
 
 namespace App\Controllers;
 
 
 use App\Config;
+use Core\View;
 
 class Devices extends Authenticated
 {
+	public function myDevicesAction(): void
+	{
+		$devices = file_get_contents(Config::IOT_API.'/api/query');
+
+		$devices = json_decode($devices);
+		$devices = json_decode(json_encode( $devices[1]), true);
+//		var_dump($devices);
+//		exit;
+		
+		View::renderTemplate('Devices/my_devices.html.twig', $devices);
+	}
+	
+	public function philipsLightAction(): void
+	{
+		View::renderTemplate('Devices/philips_light.html.twig');
+	}
 	
 	public function parseDevices()
 	{
@@ -32,17 +45,5 @@ class Devices extends Authenticated
 
 //	    var_dump($devices['dummy-light1']['caps']['bri']);
 //	    exit;
-	}
-	
-	public function myDevicesAction(): void
-	{
-		$devices = file_get_contents(Config::IOT_API.'/api/query');
-		
-		$devices = json_decode($devices);
-		$devices = json_decode(json_encode( $devices[1]), true);
-		var_dump($devices);
-		exit;
-		
-		View::renderTemplate('Accounts/my_devices.html.twig', $devices);
 	}
 }

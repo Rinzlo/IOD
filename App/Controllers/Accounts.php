@@ -13,16 +13,6 @@ use Core\View;
 class Accounts extends \Core\Controller
 {
 
-    public function myDevicesAction(): void
-    {
-        View::renderTemplate('Accounts/my_devices.html.twig');
-    }
-
-    public function philipsLightAction(): void
-    {
-        View::renderTemplate('Accounts/philips_light.html.twig');
-    }
-
     // Login
 
     /**
