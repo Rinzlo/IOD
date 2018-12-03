@@ -20,7 +20,10 @@
 
     <div id="main"><br><br>
         <label class="labelMyDevices">MY DEVICES</label><br><br>
-        <a href="/{{ app }}/Devices/philips-light"><button class="btn_myDevices"><img src="/{{ app }}/images/LightBulb.png" class="deviceIcon" align="center"><span class="deviceName">Philips Hue Light Bulb</span></button></a>
+        {% for device in devices %}
+            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btn_myDevices"><img src="/{{ app }}/images/LightBulb.png" class="deviceIcon" align="center"><span class="deviceName">{{ device['name'] }}</span></button></a>
+        {% endfor %}
+
         <p class="copyright">&copy; Meme Team All Rights Reserved</p>
     </div>
 
