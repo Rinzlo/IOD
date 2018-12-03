@@ -1,0 +1,535 @@
+[03-Dec-2018 00:33:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:33:27 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:33:27 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:33:28 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:33:29 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:05 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:05 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:53 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected).'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\TokenParser\Block.php(51): Twig_TokenStream->expect(3)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#6 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#7 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#8 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#9 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#10 [internal function]: App\Controllers\Accounts->loginAction()
+#11 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#12 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#13 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#14 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 24
+[03-Dec-2018 00:40:53 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:53 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected).'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\TokenParser\Block.php(51): Twig_TokenStream->expect(3)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#6 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#7 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#8 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#9 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#10 [internal function]: App\Controllers\Accounts->loginAction()
+#11 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#12 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#13 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#14 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 24
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected).'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\TokenParser\Block.php(51): Twig_TokenStream->expect(3)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#6 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#7 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#8 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#9 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#10 [internal function]: App\Controllers\Accounts->loginAction()
+#11 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#12 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#13 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#14 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 24
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected).'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\TokenParser\Block.php(51): Twig_TokenStream->expect(3)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#6 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#7 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#8 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#9 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#10 [internal function]: App\Controllers\Accounts->loginAction()
+#11 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#12 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#13 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#14 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 24
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected).'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\TokenParser\Block.php(51): Twig_TokenStream->expect(3)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(168): Twig_TokenParser_Block->parse(NULL)
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#6 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#7 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#8 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#9 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#10 [internal function]: App\Controllers\Accounts->loginAction()
+#11 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#12 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#13 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#14 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 24
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:40:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:17 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:50 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unknown "endblock" tag.'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#5 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#6 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#7 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#8 [internal function]: App\Controllers\Accounts->loginAction()
+#9 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#11 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#12 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 5
+[03-Dec-2018 00:41:50 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:50 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:51 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unknown "endblock" tag.'
+Stack trace: #0 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Parser.php(81): Twig_Parser->subparse(NULL, false)
+#1 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#2 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#3 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#4 C:\wamp64\www\web-app\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('Accounts/login....')
+#5 C:\wamp64\www\web-app\Core\View.php(76): Twig_Environment->render('Accounts/login....', Array)
+#6 C:\wamp64\www\web-app\Core\View.php(48): Core\View::getTemplate('Accounts/login....', Array)
+#7 C:\wamp64\www\web-app\App\Controllers\Accounts.php(22): Core\View::renderTemplate('Accounts/login....')
+#8 [internal function]: App\Controllers\Accounts->loginAction()
+#9 C:\wamp64\www\web-app\Core\Controller.php(39): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\web-app\Core\Router.php(108): Core\Controller->__call('login', Array)
+#11 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('login')
+#12 {main}
+Thrown in 'C:\wamp64\www\web-app\App\Views\Accounts\login.html.twig' on line 5
+[03-Dec-2018 00:41:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:41:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:31 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:31 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:31 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:31 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:39 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.html')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:40 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:40 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:42:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:16 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:16 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:16 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:16 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:18 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:23 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.html')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:23 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:23 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:43:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:45 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:45 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:45 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:45 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:46 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:46 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.html')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:52 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:45:52 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:03 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:03 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:48 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:46:49 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:49:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('ReHome.html')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:49:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:49:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('loginPage.css')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:36 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:37 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:37 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:38 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:39 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:39 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 00:56:39 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 02:53:54 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 02:54:11 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('manage-device')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 02:54:11 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 02:54:23 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/BackAr...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/IOD_Lo...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/LightB...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/Off.pn...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/bright...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/House....')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/usageS...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('css/loginPage.c...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/BackAr...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/LightB...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/House....')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/Off.pn...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/IOD_Lo...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/bright...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116
+[03-Dec-2018 03:13:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\web-app\public\index.php(45): Core\Router->dispatch('accounts/usageS...')
+#1 {main}
+Thrown in 'C:\wamp64\www\web-app\Core\Router.php' on line 116

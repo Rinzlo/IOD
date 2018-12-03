@@ -1,0 +1,79 @@
+button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#logoImage{
+	top: 10px;
+	left: 90px;
+}
+
+#container{
+	position: relative;
+    transform: translate(190%, 50%);
+	background-color: #050324;
+	width: 270px;
+	border-radius: 12px;
+	background-position: center;
+}
+
+input[type=username]{
+    text-align: center;
+	width: 200px;
+	padding: 10px 10px;
+	margin: 25px 25px 0px;
+	display: inline-block;
+	border: none;
+	border-radius: 12px;
+}
+
+input[type=password]{
+	text-align: center;
+    width: 200px;
+	padding: 10px 10px;
+	margin: 1px 12px 1px 25px;
+	display: inline-block;
+	border: none;
+	border-radius: 12px;
+}
+
+button[type=login]{
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	background: #393535;
+	width: 130px;
+	padding: 15px;
+	margin: 1px 35px 1px 66px;
+	display: inline-block;
+	border-style: ridge;
+	border-radius: 12px;
+}
+
+button[type=forgotUserName]{
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	background: #393535;
+	width: 130px;
+	padding: 5px;
+	margin: 12px 66px;
+	display: inline-block;
+	border: #707070;
+	border-style: ridge;
+	border-radius: 12px;	
+}
+
+button[type=forgotPassword]{
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	background: #393535;
+	width: 130px;
+	padding: 5px;
+	margin: 4px 66px 25px;
+	display: inline-block;
+	border: #707070;
+	border-style: ridge;
+	border-radius: 12px;	
+}

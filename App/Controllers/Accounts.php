@@ -12,6 +12,11 @@ use Core\View;
 
 class Accounts extends \Core\Controller
 {
+    public function manageDeviceAction(): void
+    {
+        View::renderTemplate('Accounts/manageDevice.html.twig');
+    }
+
     // Login
 
     /**

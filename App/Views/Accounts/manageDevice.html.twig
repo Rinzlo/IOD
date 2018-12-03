@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Manage Device{% endblock %}
+
+{% block footer %}
+    <script>
+        $(document).ready(function () {
+            $('.offImage').click(function () {
+                if ($('.offImage').attr('src') === "Off.png") {
+                    $('.offImage').attr('src', "On.png");
+                } else {
+                    $('.offImage').attr('src', "Off.png");
+                }
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+    <h1>Manage Device</h1>
+
+    <div class="formatter" id="header">
+			<a href="myDevices.html"><img src="BackArrow.png" id="backArrowImage" width=50px height=50px></a>
+			<img src="IOD_Logo.png" id="logoImage" width=195px height=115px>
+			<a href="ReHome.html"><img src="House.png" id="houseImage" width=50px height=50px></a>
+		</div>
+	</header>
+
+	<div class="formatter" id="container">		
+		<table>			
+			<img src="LightBulb.png" id="lightBulbImage" width=62px height=62px>
+			<h1>Philips Hue Light Bulb</h1>
+			<img class="offImage" src="Off.png" width=180px height=110px>
+			<img src="brightnessSlider.png" id="brightnessSlider" width=318px height=65px>
+			<img src="usageStats.png" id="usageStats" width=110 height=100px>
+			<p id="copyright">&copy; Meme Team All Rights Reserved</p>
+		</table>
+	</div>
+{% endblock %}
