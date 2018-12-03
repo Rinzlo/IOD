@@ -5,17 +5,26 @@
 {% block body %}
 
     <h1>Login</h1>
+    <form action="/{{ app }}/Accounts/loggedin" method="post">
+        <div>
+            <label for="inputEmail">Email address</label>
+            <input type="email" id="inputEmail" name="email" placeholder="Email address" autofocus value="{{ email }}"/>
+        </div>
+        <div>
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" name="password" placeholder="Password" />
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="remember_me" {% if remember_me %} checked="checked" {% endif %} /> Remember me
+            </label>
+        </div>
 
-    <div id="container">
-		<table>
-			<form action="ReHome.html">
-				<input type="username" placeholder="User Name" name="userName" id="inputUserName" required><br><br>
-				<input type="password" placeholder="Password" name="password" id="Password" required><br><br>				
-				<button type="login" id="btn" onclick="checkLogin(this.form)">Login</button><br>
-				<button type="forgotUserName" id="forUser">Forgot Username</button><br>
-				<button type="forgotPassword" id="forPass">Forgot Password</button>
-			</form>
-		</table>
-	</div>
+        <div class="g-recaptcha" data-sitekey="{{ public }}"></div>
 
+        <button type="submit">Log in</button>
+        <a href="/{{ app }}/password/forgot">Forgot password?</a>
+    </form>
+
+    <a href="/{{ app }}/accounts/register">Register</a>
 {% endblock %}
