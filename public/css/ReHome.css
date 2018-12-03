@@ -60,6 +60,7 @@ a{
 	width: 100%;
 	height: 547px;
 	text-align: center;
+	position: relative;
 }
 
 .btn_home{
@@ -86,7 +87,8 @@ a{
 	text-align: center;
 	font-size: 15px;
 	position: absolute;
-	bottom: 5%;
+	bottom: 2%;
 	left: 50%;
 	transform: translate(-50%, 0%);
+	
 }
