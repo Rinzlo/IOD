@@ -1,0 +1,80 @@
+{% extends "base.html.twig" %}
+
+{% block title %}myDevices{% endblock %}
+
+{% block footer %}
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+
+    <script>
+        $(document).ready(function(){
+            $('#homeImage').attr('src', "/{{ app }}/images/homePage.png");
+            $('#menuImage').attr('src', "/{{ app }}/images/Back.png");
+            $('#menuImage').removeClass('btn_menu_drawer');
+            $('nav').css('display', 'none');
+            $('#menuImage').click(function(){
+                window.location.href="/{{ app }}/Devices/my-devices";
+            });
+
+            $('.offImage').click(function(){
+                if($('.offImage').attr('src') === "/{{ app }}/images/Off.png"){
+                    $('.offImage').attr('src', "/{{ app }}/images/On.png");
+                }
+                else{
+                    $('.offImage').attr('src', "/{{ app }}/images/Off.png");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $( "#lightSlider" ).slider( {
+                min: 0,
+                max: 255,
+                step: 1,
+                value: 128,
+                //disabled: true,
+                slide:function(event, ui) {
+                    $bri = ui.value;
+                    $('#showBrightness').html($bri);
+                    //$url = 'http://45.63.49.226:8000/api/light1/bri/' + String($bri);
+                    //$('#showBrightness').html($bri);
+                    //$.ajax({
+                        //type: 'GET',
+                        //url: $url,
+                        //status: {
+                            //'bri':$bri,
+                            //'deviceid':"light1",
+                            //'on':true
+                        //}
+                    //}).done( (data) => {
+                        //if(data.indexOf("error") == -1){
+                            //$('#showBrightness').html($bri);
+                        //}else{
+                            //$('#showBrightness').html("Access failed.");
+                        //}
+                    //}).fail( (data) => {
+                        //$('#showBrightness').html("Connection failed");
+                    //})
+
+                }
+            });
+        });
+    </script>
+
+{% endblock %}
+
+{% block body %}
+
+    <div id="main"><br>
+        <img src="/{{ app }}/images/LightBulb.png" id="lightBulbImage" width=50px height=50px><br><br>
+        <label class="labelMyDevices labelDeviceName">Philips Hue Light Bulb</label><br><br><br><br>
+        <img class="offImage" src="/{{ app }}/images/Off.png" width=140px height=80px><br><br>
+        <div id="lightSlider"></div><br>
+        <label id="labelBrightness" class="labelMyDevices">Brightness:</label><span id="showBrightness" class="labelMyDevices"></span><br><br>
+        <img src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=80px><br>
+        <p class="copyright">&copy; Meme Team All Rights Reserved</p>
+    </div>
+
+{% endblock %}

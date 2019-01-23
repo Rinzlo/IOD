@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}myDevices{% endblock %}
+
+{% block footer %}
+    <script>
+        $(document).ready(function() {
+            $('#homeImage').attr('src', "/{{ app }}/images/homePage.png");
+            $('#menuImage').attr('src', "/{{ app }}/images/Back.png");
+            $('#menuImage').removeClass('btn_menu_drawer');
+            $('nav').css('display', 'none');
+            $('#menuImage').click(function(){
+                window.location.href="/{{ app }}";
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="main"><br><br>
+        <label class="labelMyDevices">MY DEVICES</label><br><br>
+        {% for device in devices %}
+            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btn_myDevices"><img src="/{{ app }}/images/LightBulb.png" class="deviceIcon" align="center"><span class="deviceName">{{ device['name'] }}</span></button></a>
+        {% endfor %}
+
+        <p class="copyright">&copy; Meme Team All Rights Reserved</p>
+    </div>
+
+
+{% endblock %}

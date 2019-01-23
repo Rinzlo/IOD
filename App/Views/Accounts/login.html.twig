@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Login{% endblock %}
+
+{% block footer %}
+    <script>
+        $(document).ready(function() {
+            $('#loginForm').css('opacity', '1.0');
+        });
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- <h1>Login</h1> -->
+    <div id="main" class="login">
+        <div class="disabled formatter back">
+        </div>
+        <div id="container" class="formatter">
+            <form action="/{{ app }}/Accounts/loggedin" method="post" id="loginForm">
+                <!-- <div> -->
+                <!-- <label for="inputEmail">Email address</label> -->
+                <input type="email" class="loginInfo" id="inputEmail" name="email" placeholder="Email address" autofocus value="{{ email }}"/><br><br>
+                <!-- </div> -->
+                <!-- <div> -->
+                <!-- <label for="inputPassword">Password</label> -->
+                <input type="password" class="loginInfo" id="inputPassword" name="password" placeholder="Password" /><br><br>
+                <!-- </div> -->
+                <!--
+                    <div>
+                        <label>
+                            <input type="checkbox" name="remember_me" {% if remember_me %} checked="checked" {% endif %} /> Remember me
+                        </label>
+                    </div>
+                    -->
+                <p class="g-recaptcha" data-sitekey="{{ public }}"></p><br>
+
+                <button type="submit" id="submitLogin">Log in</button><br>
+                <a href="/{{ app }}/password/forgot"><button type="forgotUserName">Forgot Username</button></a><br>
+                <a href="/{{ app }}/password/forgot"><button type="forgotPassword">Forgot Password</button></a>
+                <!-- <a href="/{{ app }}/password/forgot">Forgot password?</a> -->
+            </form>
+
+            <!-- <a href="/{{ app }}/accounts/register">Register</a> -->
+        </div>
+
+
+    </div>
+
+{% endblock %}
