@@ -9,6 +9,12 @@
     <script>
         $(document).ready(function(){
             $bri = 200;
+            {#console.log({{ light['id'] }});#}
+            {#if({{ light['cap']['power']['now']}})#}
+                {#$('.offImage').attr('src', "/{{ app }}/images/On.png");#}
+            {#else#}
+                {#$('.offImage').attr('src', "/{{ app }}/images/Off.png");#}
+
             $('#homeImage').attr('src', "/{{ app }}/images/homePage.png");
             $('#menuImage').attr('src', "/{{ app }}/images/Back.png");
             $('#menuImage').removeClass('btn_menu_drawer');
