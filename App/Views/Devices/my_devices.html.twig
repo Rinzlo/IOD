@@ -5,11 +5,11 @@
 {% block footer %}
     <script>
         $(document).ready(function() {
-            $('#homeImage').attr('src', "/{{ app }}/images/homePage.png");
-            $('#menuImage').attr('src', "/{{ app }}/images/Back.png");
-            $('#menuImage').removeClass('btn_menu_drawer');
+            $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
+            $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
+            $('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
             $('nav').css('display', 'none');
-            $('#menuImage').click(function(){
+            $('.header__btnNavDrawer').click(function(){
                 window.location.href="/{{ app }}";
             });
         });
@@ -18,13 +18,12 @@
 
 {% block body %}
 
-    <div id="main"><br><br>
-        <label class="labelMyDevices">MY DEVICES</label><br><br>
+    <div class="mainPanel"><br><br>
+        <label class="mainPanel__labelDevicesInfo">MY DEVICES</label><br><br>
         {% for device in devices %}
-            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btn_myDevices"><img src="/{{ app }}/images/LightBulb.png" class="deviceIcon" align="center"><span class="deviceName">{{ device['name'] }}</span></button></a>
+            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btnDevices"><img src="/{{ app }}/images/LightBulb.png" class="btnDevices__icon" align="center"><span class="btnDevices__name">{{ device['name'] }}</span></button></a>
         {% endfor %}
-
-        <p class="copyright">&copy; Meme Team All Rights Reserved</p>
+        <!-- <p class="copyright">&copy; Meme Team All Rights Reserved</p> -->
     </div>
 
 
