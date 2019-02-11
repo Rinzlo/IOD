@@ -1,0 +1,97 @@
+.formatter{
+	text-align: center;
+	width: 100%;
+}
+
+/*header*/
+#header{
+	background: #605C5C;
+	border-color: #707070;
+	height: 120px;
+	position: relative;
+    /* transform: translate(135%, 5%); */
+}
+
+img{
+	/* position: absolute; */
+}
+
+#backArrowImage{
+	top: 40%;
+	left: 5%;
+}
+
+#logoImage{
+	top: 10%;
+	left: 42%;
+}
+
+#houseImage{
+	top: 40%;
+	left: 90%;
+}
+/*end header*/
+
+/*container id*/
+#container{
+	background: #46474A;
+	border-color: #707070;
+	/* height: 547px; */
+	position: relative;
+	top: -25px;
+    /* transform: translate(135%, -4%); */
+}
+
+h3{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #D6CDCD;
+	text-align: center;
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	border-width: 1px;
+	border-top-color: #707070;
+	border-top-style: solid;
+	border-bottom-color: #707070;
+	border-bottom-style: solid;
+	border-left-color: none;
+	border-left-style: hidden;
+	border-right-color: none;
+	border-right-style: hidden;
+}
+
+.statsBtn{
+	color: limegreen;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	/* padding-top: 15px; */
+	display: table;
+	margin: 0 auto;
+}
+
+#flaskImage{
+	width: 45px;
+    height: 45px;
+    float: center;
+	cursor: pointer;
+}
+
+.statsTxt{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#barChartImage{
+	/* top: 180px; */
+	/* left: 520px; */
+	text-align: center;
+}
+
+#copyright{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 320px;
+}
+/*end container id*/
