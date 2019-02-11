@@ -94,20 +94,23 @@ class User extends Model
             $this->errors[] = 'email already taken';
         }
 
-        if($this->password != $this->password_confirmation) {
-            $this->errors[] = 'Password must match confirmation';
-        }
+        if(isset($this->password)) {
+            if (isset($this->password_confirmation) &&
+                $this->password != $this->password_confirmation) {
+                $this->errors[] = 'Password must match confirmation';
+            }
 
-        if(strlen($this->password) < 6){
-            $this->errors[] = 'Please enter at least 6 characters for the password';
-        }
+            if (strlen($this->password) < 6) {
+                $this->errors[] = 'Please enter at least 6 characters for the password';
+            }
 
-        if(preg_match('/.*[a-z]+.*/i', $this->password) == 0){
-            $this->errors[] = 'Password needs at least one letter';
-        }
+            if (preg_match('/.*[a-z]+.*/i', $this->password) == 0) {
+                $this->errors[] = 'Password needs at least one letter';
+            }
 
-        if(preg_match('/.*\d+.*/i', $this->password) == 0){
-            $this->errors[] = 'Password needs at least one number';
+            if (preg_match('/.*\d+.*/i', $this->password) == 0) {
+                $this->errors[] = 'Password needs at least one number';
+            }
         }
     }
 
@@ -368,13 +371,19 @@ class User extends Model
 
     /**
      * Update the user's profile
+     * @param array $data
+     * @return bool
      */
     public function updateProfile(array $data): bool
     {
         $this->username = $data['username'];
         $this->email = $data['email'];
-        $this->password = $data['password'];
-        $this->password_confirmation = $data['password_confirmation'];
+        if($data['password'] != '') {
+            var_dump($data);
+            exit();
+            $this->password = $data['password'];
+            $this->password_confirmation = $data['password_confirmation'];
+        }
 
         $this->validate();
 
@@ -382,9 +391,11 @@ class User extends Model
 
             $sql = 'UPDATE users
                     SET username = :username,
-                        email = :email,
-                        password = :password
-                    WHERE id = :id';
+                        email = :email';
+            if(isset($this->password))
+                $sql .= ', password = :password';
+
+            $sql .= "\nWHERE id = :id";
 
             $db = static::getDB();
             $stmt = $db->prepare($sql);
@@ -393,8 +404,10 @@ class User extends Model
             $stmt->bindValue(':email', $this->email, PDO::PARAM_STR);
             $stmt->bindValue(':id', $this->id, PDO::PARAM_INT);
 
-            $password = $this->password_hash($this->password, PASSWORD_DEFAULT);
-            $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+            if(isset($this->password)) {
+                $password = password_hash($this->password, PASSWORD_DEFAULT);
+                $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+            }
 
             return $stmt->execute();
 
