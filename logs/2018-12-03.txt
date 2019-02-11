@@ -53,3 +53,13 @@ Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
 Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('images/usageSta...')
 #1 {main}
 Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[03-Dec-2018 10:05:53 UTC] Uncaught exception: 'Exception' with message 'Method myDevicesAction not found in controller App\Controllers\Accounts'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#1 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/my-dev...')
+#2 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Controller.php' on line 44
+[03-Dec-2018 10:06:06 UTC] Uncaught exception: 'Exception' with message 'Method myDevicesAction not found in controller App\Controllers\Accounts'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#1 /Applications/MAMP/htdocs/web-app/public/index.php(45): Core\Router->dispatch('Accounts/my-dev...')
+#2 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Controller.php' on line 44

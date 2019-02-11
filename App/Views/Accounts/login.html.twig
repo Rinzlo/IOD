@@ -5,7 +5,7 @@
 {% block footer %}
     <script>
         $(document).ready(function() {
-            $('#loginForm').css('opacity', '1.0');
+            $('.loginForm').css('opacity', '1.0');
         });
     </script>
 {% endblock %}
@@ -13,18 +13,18 @@
 {% block body %}
 
     <!-- <h1>Login</h1> -->
-    <div id="main" class="login">
+    <div class="mainPanel">
         <div class="disabled formatter back">
         </div>
-        <div id="container" class="formatter">
-            <form action="/{{ app }}/Accounts/loggedin" method="post" id="loginForm">
+        <div class="loginPanel formatter">
+            <form action="/{{ app }}/Accounts/loggedin" method="post" class="loginForm">
                 <!-- <div> -->
                 <!-- <label for="inputEmail">Email address</label> -->
-                <input type="email" class="loginInfo" id="inputEmail" name="email" placeholder="Email address" autofocus value="{{ email }}"/><br><br>
+                <input type="email" class="loginForm__info loginForm__info-margin-25250" name="email" placeholder="Email address" autofocus value="{{ email }}"/><br><br>
                 <!-- </div> -->
                 <!-- <div> -->
                 <!-- <label for="inputPassword">Password</label> -->
-                <input type="password" class="loginInfo" id="inputPassword" name="password" placeholder="Password" /><br><br>
+                <input type="password" class="loginForm__info loginForm__info-margin-125" name="password" placeholder="Password" /><br><br>
                 <!-- </div> -->
                 <!--
                     <div>
@@ -35,9 +35,9 @@
                     -->
                 <p class="g-recaptcha" data-sitekey="{{ public }}"></p><br>
 
-                <button type="submit" id="submitLogin">Log in</button><br>
-                <a href="/{{ app }}/password/forgot"><button type="forgotUserName">Forgot Username</button></a><br>
-                <a href="/{{ app }}/password/forgot"><button type="forgotPassword">Forgot Password</button></a>
+                <button type="submit" class="loginForm__btnSubmit">Log in</button><br>
+                <a href="/{{ app }}/password/forgot"><button type="forgotUserName" class="loginForm__forgotInfo loginForm__forgotInfo-margin-1266">Forgot Username</button></a><br>
+                <a href="/{{ app }}/password/forgot"><button type="forgotPassword" class="loginForm__forgotInfo loginForm__forgotInfo-margin-46625">Forgot Password</button></a>
                 <!-- <a href="/{{ app }}/password/forgot">Forgot password?</a> -->
             </form>
 
