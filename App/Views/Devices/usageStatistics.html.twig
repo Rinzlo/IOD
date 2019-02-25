@@ -1,17 +1,20 @@
 {% extends "base.html.twig" %}
-{% extends "App/Views/public/css/usageStatistics.css" %}
-{% extends "App/Views/public/js/usageStatistics.js" %}
-
 
 {% block title %}usageStatistics{% endblock %}
 
-{% block header %}
+{% block footer %}
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+	
+	<script>
+		function usageStatsBtn(form){
+			window.location = "usageStatistics.html";
+		}
 
-    <div class="formatter" id="header">
-		<a href="ReHome.html"><img src="BackArrow.png" id="backArrowImage" width=50px height=50px></a>
-		<img src="IOD_Logo.png" id="logoImage" width=195px height=115px>
-		<a href="ReHome.html"><img src="House.png" id="houseImage" width=50px height=50px></a>
-	</div>
+		function allDevBtn(){
+			window.location = "#options";
+		}
+	</script>
 
 {% endblock %}
 
@@ -22,11 +25,12 @@
 			<h3>USAGE STATISTICS</h3>
 			<form action="">
 				<div class="statsBtn">
-					<img src="App/Views/public/Images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
+					<img src="/{{apps}}/images/allDevices.PNG" id="allDev" type="button" onclick="allDevBtn()">
+						<img src="/{{apps}}/images/allDevicesOptions.PNG" id="options">
+					<img src="/{{apps}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
 				</div>
 			</form>
-			<img src="App/Views/public/Images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
-			<p id="copyright">&copy; Meme Team All Rights Reserved</p>
+			<img src="/{{apps}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
 		</table>
 	</div>
 

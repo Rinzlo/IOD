@@ -11,7 +11,12 @@ use function GuzzleHttp\Promise\is_settled;
 
 class Devices extends Authenticated
 {
-	
+	public function usageAction(): void
+	{
+		View::renderTemplate( 'Devices/usageStatistics.html.twig');
+	}
+
+
 	public function lightOnOffAction(): void
 	{
 	

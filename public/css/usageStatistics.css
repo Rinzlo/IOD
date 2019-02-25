@@ -12,11 +12,7 @@
     /* transform: translate(135%, 5%); */
 }
 
-img{
-	/* position: absolute; */
-}
-
-#backArrowImage{
+/*#backArrowImage{
 	top: 40%;
 	left: 5%;
 }
@@ -30,6 +26,7 @@ img{
 	top: 40%;
 	left: 90%;
 }
+*/
 /*end header*/
 
 /*container id*/
@@ -59,6 +56,15 @@ h3{
 	border-left-style: hidden;
 	border-right-color: none;
 	border-right-style: hidden;
+}
+
+#allDev{
+	width: 45px;
+    height: 45px;
+	cursor: pointer;
+	float: center;
+	position: relative;
+	display: inline-block;
 }
 
 .statsBtn{

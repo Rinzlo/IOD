@@ -1,7 +1,7 @@
 <?php
 //error_reporting(E_STRICT);
 declare(strict_types=1);
-//phpinfo();
+// phpinfo();
 
 ini_set('session.cookie_lifetime', '864000');   // ten days in seconds
 
@@ -41,6 +41,7 @@ $router->add('password/reset/{token:[\da-f]+}', ['controller' => 'Password', 'ac
 $router->add('accounts/activated/{token:[\da-f]+}', ['controller' => 'Accounts', 'action' => 'activate']);
 $router->add('devices/my-light/{id:[\s\S]*}', ['controller' => 'Devices', 'action' => 'myLight']);
 $router->add('{controller}/{action}');
+
 
 
 $router->dispatch($_SERVER['QUERY_STRING']);
