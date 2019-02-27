@@ -9,34 +9,15 @@
 	border-color: #707070;
 	height: 120px;
 	position: relative;
-    /* transform: translate(135%, 5%); */
 }
-
-/*#backArrowImage{
-	top: 40%;
-	left: 5%;
-}
-
-#logoImage{
-	top: 10%;
-	left: 42%;
-}
-
-#houseImage{
-	top: 40%;
-	left: 90%;
-}
-*/
 /*end header*/
 
 /*container id*/
 #container{
 	background: #46474A;
 	border-color: #707070;
-	/* height: 547px; */
 	position: relative;
 	top: -25px;
-    /* transform: translate(135%, -4%); */
 }
 
 h3{
@@ -58,20 +39,78 @@ h3{
 	border-right-style: hidden;
 }
 
-#allDev{
-	width: 45px;
-    height: 45px;
-	cursor: pointer;
+.navbar {
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
 	float: center;
-	position: relative;
-	display: inline-block;
-}
-
+	font-size: 16px;
+	color: #D6CDCD;
+	text-align: center;
+	padding: 14px 16px;
+  }
+  
+  .dropdown {
+	float: center;
+	overflow: hidden;
+	padding: 5px 16px;
+	width: 100%;
+  }
+  
+  .dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border-color: #938D8D;
+	border-style: solid;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: auto;
+	border-radius: 20px;
+	//-webkit-border-radius: 5px;/* for Safari and Chrome*/
+	//-moz-border-radius: 5px;/* for Firefox*/
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: center;
+	color: #D6CDCD;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background: #605C5C;
+	border-top-color: #938D8D;
+	border-bottom-color: #938D8D;
+	border-left-color: #938D8D;
+	border-right-color: #938D8D;
+	border: 1px solid;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: grey;
+  }
+  
+  .show {
+	display: block;
+  }
+  
 .statsBtn{
 	color: limegreen;
 	font-size: 20px;
 	font-family: Arial, Helvetica, sans-serif;
-	/* padding-top: 15px; */
 	display: table;
 	margin: 0 auto;
 }
@@ -89,8 +128,6 @@ h3{
 }
 
 #barChartImage{
-	/* top: 180px; */
-	/* left: 520px; */
 	text-align: center;
 }
 

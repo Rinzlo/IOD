@@ -1,22 +1,27 @@
-
-#lightBulbImage{
-	top: 30px;
-}
-
-
-.offImage{
-	top: 180px;
-	cursor: pointer;
-}
-
 /*
 #lightSlider{
 	text-align: center;
 	width: 400px;
 }
+
+#brightnessSlider{
+	top: 310px;
+	cursor: pointer;
+}
 */
 
-#lightSlider{
+
+.mainPanell__icon{
+	top: 30px;
+}
+
+
+.mainPanel__offImage{
+	top: 180px;
+	cursor: pointer;
+}
+
+.mainPanel__lightSlider{
 	position: relative;
 	margin-right:auto;
 	margin-left:auto;
@@ -27,33 +32,16 @@
 	
 }
 
-#labelBrightness{
+.mainPanel__labelDeviceInfo-color-white{
 	color: white;
 	font-size: 20px;
 }
 
-#showBrightness{
-	color: white;
-	font-size: 20px;
-}
-
-#brightnessSlider{
-	top: 310px;
-	cursor: pointer;
-}
-
-#usageStats{
+.mainPanel__statIcon{
 	top: 390px;
 	cursor: pointer;
 }
 
-
-#copyright{
-	color: yellow;
-	text-align: center;
-	font-size: 10px;
-	padding-top: 345px;
-}
 /*end container id*/
 
 /* The switch - the box around the slider */

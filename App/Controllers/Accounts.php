@@ -106,6 +106,8 @@ class Accounts extends \Core\Controller
 
     public function createAction(): void
     {
+        var_dump('hi');
+        die();
 
         if(!Auth::reCaptchaCheck())
             $this->redirect('/'.Config::APP_NAME.'/accounts/register');

@@ -21,7 +21,7 @@
                         required: true,
                         email: true,
                         remote: {
-                            url: 'accounts/validate-email',
+                            url: '/{{ app }}/accounts/validate-email',
                             data: {
                                 ignore_id: function() {
                                     return userId;
@@ -45,7 +45,7 @@
             });
 
             /**
-             * Show passowrd toggle button
+             * Show password toggle button
              */
             $('#inputPassword').hideShowPassword({
                 show: false,
@@ -73,7 +73,7 @@
         </ul>
     {% endif %}
 
-    <form method="post" aciton="/{{ app }}/profile/update" id="formProfile">
+    <form method="post" action="/{{ app }}/profile/update" id="formProfile">
 
         <div>
             <label for="inputName">Username</label>
@@ -97,7 +97,7 @@
         </div>
 
         <button type="submit">Save</button>
-        <a href="profile/show">Cancel</a>
+        <a href="/{{ app }}/profile/show">Cancel</a>
 
     </form>
 

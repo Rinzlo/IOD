@@ -15,7 +15,7 @@ button:hover{
 	width: 100%;
 }
 
-#container{
+.loginPanel{
 	position: relative;
 	top: 30%;
 	width: 100%;
@@ -37,28 +37,24 @@ button:hover{
     /* transform: translate(135%, 1%); */
 }
 
-
-#inputEmail{
+.loginForm__info{
     	text-align: center;
 	width: 80%;
 	padding: 10px 10px;
+	display: inline-block;
+	border: none;
+	border-radius: 12px;
+}
+
+.loginForm__info-margin-25250{
 	margin: 25px 25px 0px;
-	display: inline-block;
-	border: none;
-	border-radius: 12px;
 }
 
-#inputPassword{
-	text-align: center;
-    	width: 80%;
-	padding: 10px 10px;
-	margin: 1px 25px 1px 25px;
-	display: inline-block;
-	border: none;
-	border-radius: 12px;
-}
+.loginForm__info-margin-125{
+	margin: 1px 25px;
+}	
 
-#submitLogin{
+.loginForm__btnSubmit{
 	text-align: center;
 	font-size: 18px;
 	color: white;
@@ -71,34 +67,6 @@ button:hover{
 	border-radius: 12px;
 }
 
-button[type=forgotUserName]{
-	text-align: center;
-	color: white;
-	font-size: 10px;
-	background: #393535;
-	width: 30%;
-	padding: 5px;
-	margin: 12px 66px;
-	display: inline-block;
-	border: #707070;
-	border-style: ridge;
-	border-radius: 12px;	
-}
-
-button[type=forgotPassword]{
-	text-align: center;
-	color: white;
-	font-size: 10px;
-	background: #393535;
-	width: 30%;
-	padding: 5px;
-	margin: 4px 66px 25px;
-	display: inline-block;
-	border: #707070;
-	border-style: ridge;
-	border-radius: 12px;	
-}
-
 .g-recaptcha{
 	position: relative;
 	margin-right:auto;
@@ -107,73 +75,25 @@ button[type=forgotPassword]{
 	margin-bottom: 10px;
 	text-align: center;
 	width:300px;
-	
 }
 
+.loginForm__forgotInfo{
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	background: #393535;
+	width: 30%;
+	padding: 5px;
+	display: inline-block;
+	border: #707070;
+	border-style: ridge;
+	border-radius: 12px;	
+}
 
-/* input[type=checkbox]{ */
-	/* text-align: center; */
-    /* width: 200px; */
-	/* padding: 15px 20px; */
-	/* margin: 4px 2px; */
-	/* display: inline-block; */
-	/* border: white; */
-	/* border-radius: 12px; */
-/* } */
+.loginForm__forgotInfo-margin-1266{
+	margin: 12px 66px;
+}
 
-/* #hambMenu{ */
-	/* display: block; */
-	/* position: relative; */
-	/* top: 50px; */
-	/* bottom: 50px; */
-	/* cursor: pointer; */
-	/* opacity: 0; */
-	/* z-index: 2; */
-	
-/* } */
-
-/* #hambMenu span{ */
-	/* display: block; */
-	/* width: 33px; */
-	/* height: 4px; */
-	/* margin-bottom: 5px; */
-	/* position: relative; */
-	/* background: gray; */
-	/* border-radius: 3px; */
-	/* z-index: 1; */
-	/* transform-origin: 4px 0px; */
-	/* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; */
-/* } */
-
-/* #hambMenu span:first-child{ */
-  /* transform-origin: 0% 0%; */
-/* } */
-
-/* #hambMenu span:nth-last-child(2){ */
-  /* transform-origin: 0% 100%; */
-/* } */
-
-/* #menu{ */
-	/* position: absolute; */
-	/* width: 300px; */
-	/* margin: -100px 0 0 -50px; */
-	/* padding: 50px; */
-	/* padding-top: 125px; */
-	
-	/* background: #black; */
-	/* list-style-type: none; */
-	
-	/* transform-origin: 0% 0%; */
-	/* transform: translate(-100%, 0); */
-	
-	/* transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
-/* } */
-
-/* #menu li{ */
-	/* padding: 10px 10px; */
-	/* font-size: 25px; */
-/* } */
-
-/* hide{ */
-	/* display: none; */
-/* } */
+.loginForm__forgotInfo-margin-46625{
+	margin: 4px 66px 25px;
+}

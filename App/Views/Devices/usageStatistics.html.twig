@@ -11,8 +11,17 @@
 			window.location = "usageStatistics.html";
 		}
 
-		function allDevBtn(){
-			window.location = "#options";
+		function allDevFunction(){
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function(e) {
+  			if (!e.target.matches('.dropbtn')) {
+  				var myDropdown = document.getElementById("myDropdown");
+    			if (myDropdown.classList.contains('show')) {
+      				myDropdown.classList.remove('show');
+    			}
+  			}
 		}
 	</script>
 
@@ -23,10 +32,20 @@
 <div class="formatter" id="container">
 		<table>
 			<h3>USAGE STATISTICS</h3>
+			<div class="navbar">
+				<div class="dropdown">
+					<button class="dropbtn" onclick="allDevFunction()">ALL DEVICES
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="#">Philip's Hue #1</a>
+						<a href="#">Philip's Hue RGB</a>
+						<a href="#">Philip's Hue #2</a>
+					</div>
+				</div>
+			</div>
 			<form action="">
 				<div class="statsBtn">
-					<img src="/{{apps}}/images/allDevices.PNG" id="allDev" type="button" onclick="allDevBtn()">
-						<img src="/{{apps}}/images/allDevicesOptions.PNG" id="options">
 					<img src="/{{apps}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
 				</div>
 			</form>
