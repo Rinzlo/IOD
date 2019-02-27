@@ -7,7 +7,7 @@
         $(document).ready(function() {
             $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
-            $('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
+            //$('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
             $('nav').css('display', 'none');
             $('.header__btnNavDrawer').click(function(){
                 window.location.href="/{{ app }}";
@@ -23,7 +23,6 @@
         {% for device in devices %}
             <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btnDevices"><img src="/{{ app }}/images/LightBulb.png" class="btnDevices__icon" align="center"><span class="btnDevices__name">{{ device['name'] }}</span></button></a>
         {% endfor %}
-        <!-- <p class="copyright">&copy; Meme Team All Rights Reserved</p> -->
     </div>
 
 

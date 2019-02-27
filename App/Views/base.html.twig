@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="/{{ app }}/css/signUpPage.css">
 	<link rel="stylesheet" href="/{{ app }}/css/myDevices.css">
 	<link rel="stylesheet" href="/{{ app }}/css/philipsHueLightBulb.css">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,8 @@
 	    		</div>
 			</nav>
 			<img src="/{{ app }}/images/IOD_Logo.png" width=180px height=100px class="head header__logo">
-			<a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a>
+			<img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack">
+			<!-- <a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a> -->
 		</div>
 	</header>
     {% for message in flash_messages %}
@@ -48,12 +50,16 @@
             crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-    <script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+	<script>
         $(function(){
             $('.header__btnBack').attr('src', "/{{ app }}/images/home.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Menu.png");
             $('.btnChangeDrawerStats').click(function(){
                 $('nav').toggleClass('open');
+            });
+            $('.header__btnBack').click(function(){
+                window.location.href="/{{ app }}/logout";
             });
         });
     </script>
