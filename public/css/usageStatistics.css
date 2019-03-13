@@ -44,14 +44,6 @@ h3{
 	font-family: Arial, Helvetica, sans-serif;
   }
   
-  .navbar a {
-	float: center;
-	font-size: 16px;
-	color: #D6CDCD;
-	text-align: center;
-	padding: 14px 16px;
-  }
-  
   .dropdown {
 	float: center;
 	overflow: hidden;
@@ -77,7 +69,7 @@ h3{
   
   .dropdown-content {
 	display: none;
-	position: absolute;
+	position: relative;
 	background-color: #f9f9f9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
