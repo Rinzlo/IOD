@@ -63,8 +63,8 @@ h3{
 	font-family: inherit;
 	margin: auto;
 	border-radius: 20px;
-	//-webkit-border-radius: 5px;/* for Safari and Chrome*/
-	//-moz-border-radius: 5px;/* for Firefox*/
+	-webkit-border-radius: 5px;/* for Safari and Chrome*/
+	-moz-border-radius: 5px;/* for Firefox*/
   }
   
   .dropdown-content {
@@ -109,8 +109,8 @@ h3{
 
 #flaskImage{
 	width: 45px;
-    height: 45px;
-    float: center;
+  height: 45px;
+  float: center;
 	cursor: pointer;
 }
 

@@ -15,6 +15,11 @@ class Devices extends Authenticated
 
     }
 
+    public function usageStatisticsAction(): void
+    {
+        View::renderTemplate('Devices/usageStatistics.html.twig');
+    }
+
     /**
      * takes in an 'id' as its route_params
      *

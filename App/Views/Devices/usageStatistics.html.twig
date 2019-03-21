@@ -29,7 +29,7 @@
 
 {% block body %}
 
-<div class="formatter" id="container">
+<div class="formatter mainPanel" id="container">
 		<table>
 			<h3>USAGE STATISTICS</h3>
 			<div class="navbar">
@@ -46,10 +46,10 @@
 			</div>
 			<form action="">
 				<div class="statsBtn">
-					<img src="/{{apps}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
+					<img src="/{{app}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
 				</div>
 			</form>
-			<img src="/{{apps}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
+			<img src="/{{app}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
 		</table>
 	</div>
 
