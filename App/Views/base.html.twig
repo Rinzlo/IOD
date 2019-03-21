@@ -6,36 +6,36 @@
     <link rel="stylesheet" href="/{{ app }}/css/style.css">
     <link rel="stylesheet" href="/{{ app }}/css/ReHome.css">
     <link rel="stylesheet" href="/{{ app }}/css/Hamburger.css">
-	<link rel="stylesheet" href="/{{ app }}/css/loginPage.css">
-	<link rel="stylesheet" href="/{{ app }}/css/signUpPage.css">
-	<link rel="stylesheet" href="/{{ app }}/css/myDevices.css">
-	<link rel="stylesheet" href="/{{ app }}/css/philipsHueLightBulb.css">
-	{#<link rel="stylesheet" href="/bootstrap/bootstrap.css" />#}
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/{{ app }}/css/loginPage.css">
+    <link rel="stylesheet" href="/{{ app }}/css/signUpPage.css">
+    <link rel="stylesheet" href="/{{ app }}/css/myDevices.css">
+    <link rel="stylesheet" href="/{{ app }}/css/philipsHueLightBulb.css">
+    {#<link rel="stylesheet" href="/bootstrap/bootstrap.css" />#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <header>
-		<div class="header">
-			<img src="/{{ app }}/images/Menu.png" width=60px height=60px class="header__btnNavDrawer btnChangeDrawerStats head">
-			<nav class="navDrawer">
-			    <div class="currentUser"><br>
-			        <img src="/{{ app }}/images/My_Profile_Icon.png" class="currentUser__userIcon" width=60px height=60px><br><br>
-					<label class="currentUser__userName">{{ current_user.username }}</label>
-			    </div>
-			    <div class="drawerMenu">
-					<button class="btnDrawerMenu"><img src="/{{ app }}/images/My_Profile_Button.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">My Profile</span></button>
-					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Help_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Help</span></button>
-					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Support_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Support</span></button>
-					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Devices_Icon.png" class="btnDrawerMenu__icon btnDrawerMenu__icon-size-wider" align="center"><span class="btnDrawerMenu__name btnDrawerMenu__name-margin-wider">Supported Devices</span></button>
-					<a href="/{{ app }}/logout"><button class="btnDrawerMenu"><img src="/{{ app }}/images/Logout_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Logout</span></button></a>
-					<input type="button" value="Close Menu" class="btnChangeDrawerStats btnDrawerMenu btnDrawerMenu-color-white">
-	    		</div>
-			</nav>
-			<img src="/{{ app }}/images/IOD_Logo.png" width=180px height=100px class="head header__logo">
-			<a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a>
-		</div>
-	</header>
+        <div class="header">
+            <img src="/{{ app }}/images/Menu.png" width=60px height=60px class="header__btnNavDrawer btnChangeDrawerStats head">
+            <nav class="navDrawer">
+                <div class="currentUser"><br>
+                    <img src="/{{ app }}/images/My_Profile_Icon.png" class="currentUser__userIcon" width=60px height=60px><br><br>
+                    <label class="currentUser__userName">{{ current_user.username }}</label>
+                </div>
+                <div class="drawerMenu">
+                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/My_Profile_Button.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">My Profile</span></button>
+                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Help_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Help</span></button>
+                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Support_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Support</span></button>
+                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Devices_Icon.png" class="btnDrawerMenu__icon btnDrawerMenu__icon-size-wider" align="center"><span class="btnDrawerMenu__name btnDrawerMenu__name-margin-wider">Supported Devices</span></button>
+                    <a href="/{{ app }}/logout"><button class="btnDrawerMenu"><img src="/{{ app }}/images/Logout_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Logout</span></button></a>
+                    <input type="button" value="Close Menu" class="btnChangeDrawerStats btnDrawerMenu btnDrawerMenu-color-white">
+                </div>
+            </nav>
+            <img src="/{{ app }}/images/IOD_Logo.png" width=180px height=100px class="head header__logo">
+            <a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a>
+        </div>
+    </header>
     {% for message in flash_messages %}
         <div class="alert alert-{{ message.type }}">
             {{ message.body }}
