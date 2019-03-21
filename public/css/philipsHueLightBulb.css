@@ -37,11 +37,66 @@
 	font-size: 20px;
 }
 
-.mainPanel__statIcon{
+.deviceBtns__statIcon{
 	top: 390px;
 	cursor: pointer;
+	text-align: left;
+	margin-left: 20px;
 }
 
+.colorPickerBtn{
+	background: #46474A;
+	border: none;
+}
+
+.colorPickerBtn__icon{
+	top: 390px;
+	cursor: pointer;
+	margin-right: 10px;
+	margin-left: 50px;
+	text-align: right;
+}
+
+.deviceBtns{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.colorPicker{
+	background: #46474A;
+	width: 195px;
+	height: 224px;
+	position: absolute;
+	top: 300px;
+	right: -25%;
+}
+.colorPicker__palette{
+	position: absolute;
+	//right: 30%;
+	//top: 300px;
+	
+	//right: -40%;
+	z-index: 100;
+}
+
+.slideIn{
+	z-index: 100;
+	
+}
+/*
+.colorPicker{
+	position: absolute;
+	top: 300px;
+	right: 30%;
+	transition: all 0.2s;
+	transform: translateX(312px);
+	z-index: 1000;
+}
+
+.colorPicker.open {
+	transform: translateX(0);
+}
+*/
 /*end container id*/
 
 /* The switch - the box around the slider */
