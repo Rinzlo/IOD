@@ -94,9 +94,6 @@ class User extends Model
             $this->errors[] = 'email already taken';
         }
 
-        var_dump("here");
-        die();
-
         if(isset($this->password)) {
 
             if (isset($this->password_confirmation) &&

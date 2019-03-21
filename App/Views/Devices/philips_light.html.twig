@@ -17,14 +17,17 @@
 
             $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
-            $('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
+            //$('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
             $('nav').css('display', 'none');
             $('.header__btnNavDrawer').click(function(){
-                window.location.href="/{{ app }}/devices/my-devices";
+                {#window.location.href="/{{ app }}/devices/my-devices";#}
+                window.location.href="/{{ app }}";
             });
+
             $('.header__btnBack').click(function(){
                 window.location.href="/{{ app }}";
             });
+
             $('#offImage').click(function(){
                 if($('#offImage').attr('src') === "/{{ app }}/images/Off.png"){
                     $.ajax({
@@ -95,7 +98,31 @@
                     }).fail( (data) => {
                         $('#showBrightness').html("Connection failed");
                     })
+                }
+            });
+        });
+    </script>
 
+    <script>
+        jQuery(function($){
+            $(".colorPicker__palette").spectrum({
+                showInput: true,
+                flat: true,
+
+                change: function(color){
+                    $colorData = $(".colorPicker__palette").spectrum("get");
+                    $('#showColor').html($colorData.toRgbString());
+                }
+            });
+            $(".colorPickerBtn").click(function(){
+
+                if($('.colorPicker').hasClass('off')){
+                    $('.colorPicker').removeClass('off');
+                    $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+                }else{
+                    $('.colorPicker').addClass('off')
+                    $('.colorPicker').animate({'margin-right':'0%'},300);
+                    $('.colorPickerBtn').animate({'margin-right':'0%'},300);
                 }
             });
         });
@@ -112,9 +139,11 @@
 
         <div class="mainPanel__lightSlider" id="lightSlider"></div><br>
 
-        <label id="labelBrightness" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Brightness:</label><span id="showBrightness" class="mainPanel__labelDeviceInfo-color-white"></span><br><br>
-        <img  class="mainPanel__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=80px><br>
-        <!-- <p class="copyright">&copy; Meme Team All Rights Reserved</p> -->
+        <label id="labelBrightness" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Brightness:&nbsp;</label><span id="showBrightness" class="mainPanel__labelDeviceInfo-color-white"></span><br>
+        <label id="labelColor" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Color:&nbsp;</label><span id="showColor" class="mainPanel__labelDeviceInfo-color-white"></span><br><br>
+        <img  class="deviceBtns__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=90px>
+        <button class="colorPickerBtn"><img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn__icon" width=90px height=90px></button>
+        <div class="colorPicker off"><span class="colorPicker__palette" /></div>
     </div>
 
 {% endblock %}

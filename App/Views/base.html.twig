@@ -17,26 +17,27 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <img src="/{{ app }}/images/Menu.png" width=60px height=60px class="header__btnNavDrawer btnChangeDrawerStats head">
-            <nav class="navDrawer">
-                <div class="currentUser"><br>
-                    <img src="/{{ app }}/images/My_Profile_Icon.png" class="currentUser__userIcon" width=60px height=60px><br><br>
-                    <label class="currentUser__userName">{{ current_user.username }}</label>
-                </div>
-                <div class="drawerMenu">
-                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/My_Profile_Button.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">My Profile</span></button>
-                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Help_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Help</span></button>
-                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Support_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Support</span></button>
-                    <button class="btnDrawerMenu"><img src="/{{ app }}/images/Devices_Icon.png" class="btnDrawerMenu__icon btnDrawerMenu__icon-size-wider" align="center"><span class="btnDrawerMenu__name btnDrawerMenu__name-margin-wider">Supported Devices</span></button>
-                    <a href="/{{ app }}/logout"><button class="btnDrawerMenu"><img src="/{{ app }}/images/Logout_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Logout</span></button></a>
-                    <input type="button" value="Close Menu" class="btnChangeDrawerStats btnDrawerMenu btnDrawerMenu-color-white">
-                </div>
-            </nav>
-            <img src="/{{ app }}/images/IOD_Logo.png" width=180px height=100px class="head header__logo">
-            <a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a>
-        </div>
-    </header>
+		<div class="header">
+			<img src="/{{ app }}/images/Menu.png" width=60px height=60px class="header__btnNavDrawer btnChangeDrawerStats head">
+			<nav class="navDrawer">
+			    <div class="currentUser"><br>
+			        <img src="/{{ app }}/images/My_Profile_Icon.png" class="currentUser__userIcon" width=60px height=60px><br><br>
+					<label class="currentUser__userName">{{ current_user.username }}</label>
+			    </div>
+			    <div class="drawerMenu">
+					<button class="btnDrawerMenu"><img src="/{{ app }}/images/My_Profile_Button.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">My Profile</span></button>
+					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Help_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Help</span></button>
+					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Support_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Support</span></button>
+					<button class="btnDrawerMenu"><img src="/{{ app }}/images/Devices_Icon.png" class="btnDrawerMenu__icon btnDrawerMenu__icon-size-wider" align="center"><span class="btnDrawerMenu__name btnDrawerMenu__name-margin-wider">Supported Devices</span></button>
+					<a href="/{{ app }}/logout"><button class="btnDrawerMenu"><img src="/{{ app }}/images/Logout_Icon.png" class="btnDrawerMenu__icon" align="center"><span class="btnDrawerMenu__name">Logout</span></button></a>
+					<input type="button" value="Close Menu" class="btnChangeDrawerStats btnDrawerMenu btnDrawerMenu-color-white">
+	    		</div>
+			</nav>
+			<img src="/{{ app }}/images/IOD_Logo.png" width=180px height=100px class="head header__logo">
+			<img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack">
+			<!-- <a href="/{{ app }}/logout"><img src="/{{ app }}/images/Home.png" width=60px height=60px class="head header__btnBack"></a> -->
+		</div>
+	</header>
     {% for message in flash_messages %}
         <div class="alert alert-{{ message.type }}">
             {{ message.body }}
@@ -51,12 +52,16 @@
             crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-    <script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+	<script>
         $(function(){
             $('.header__btnBack').attr('src', "/{{ app }}/images/home.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Menu.png");
             $('.btnChangeDrawerStats').click(function(){
                 $('nav').toggleClass('open');
+            });
+            $('.header__btnBack').click(function(){
+                window.location.href="/{{ app }}/logout";
             });
         });
     </script>

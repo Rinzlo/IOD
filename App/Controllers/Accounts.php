@@ -39,7 +39,7 @@ class Accounts extends \Core\Controller
         	
 	        Auth::login($user, $remember_me);
 	        
-	        Flash::addMessage('Login successful');
+	        //Flash::addMessage('Login successful');
         	
             $this->redirect(Auth::getReturnToPage());
             
@@ -70,7 +70,7 @@ class Accounts extends \Core\Controller
 	 */
     public function showLogoutMessageAction(): void
     {
-	    Flash::addMessage('Logout successful');
+	    //Flash::addMessage('Logout successful');
 	
 	    $this->redirect();
     }
@@ -106,9 +106,6 @@ class Accounts extends \Core\Controller
 
     public function createAction(): void
     {
-        var_dump('hi');
-        die();
-
         if(!Auth::reCaptchaCheck())
             $this->redirect('/'.Config::APP_NAME.'/accounts/register');
 

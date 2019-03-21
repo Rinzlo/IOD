@@ -10,19 +10,19 @@
     {% if current_user %}
         <!-- Hello {{ current_user.username }}. -->
         <div class="mainPanel"><br><br>
+            <!-- href should be "/{{  app }}/Devices/my-devices". -->
+            <!-- But my-devices page needs to connect to the Brian's server and it doesn't show anything without the server. -->
+            <!-- my-light.twig also needs Brian's server to get device id. -->
+            <!-- So, I'm testing the design in philips-light page that doesn't need to connect to the server. -->
             <a href="/{{ app }}/Devices/philips-light"><input type="button" value="MY DEVICES" class="mainPanel__btnMenu"></a><br><br>
             <input type="button" value="USAGE STATISTICS" class="mainPanel__btnMenu"><br><br>
             <input type="button" value="ADD A DEVICE" class="mainPanel__btnMenu"><br><br>
             <input type="button" value="MANAGE USERS" class="mainPanel__btnMenu"><br>
-            <!-- <p class="mainPanel__copyright">&copy; Meme Team All Rights Reserved</p> -->
         </div>
-        <!-- <a href="/{{ app }}/logout">Log out</a> -->
     {% else %}
         <div class="mainPanel"><br><br>
             <a href="/{{ app }}/login"><input type="button" value="LOGIN" id="loginButton" class="mainPanel__btnMenu"></a><br><br>
             <a href="/{{ app }}/accounts/register"><input type="button" value="REGISTER" id="registerButton" class="mainPanel__btnMenu"></a><br><br>
-            <!-- <p class="mainPanel__copyright">&copy; Meme Team All Rights Reserved</p> -->
-            <!-- <a href="/{{ app }}/login">Login</a> or <a href="/{{ app }}/accounts/register">Register</a><br> -->
         </div>
     {% endif %}
 
