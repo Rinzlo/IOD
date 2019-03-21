@@ -1,0 +1,132 @@
+.formatter{
+	text-align: center;
+	width: 100%;
+}
+
+/*header*/
+#header{
+	background: #605C5C;
+	border-color: #707070;
+	height: 120px;
+	position: relative;
+}
+/*end header*/
+
+/*container id*/
+#container{
+	background: #46474A;
+	border-color: #707070;
+	position: relative;
+	top: -25px;
+}
+
+h3{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #D6CDCD;
+	text-align: center;
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	border-width: 1px;
+	border-top-color: #707070;
+	border-top-style: solid;
+	border-bottom-color: #707070;
+	border-bottom-style: solid;
+	border-left-color: none;
+	border-left-style: hidden;
+	border-right-color: none;
+	border-right-style: hidden;
+}
+
+.navbar {
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .dropdown {
+	float: center;
+	overflow: hidden;
+	padding: 5px 16px;
+	width: 100%;
+  }
+  
+  .dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border-color: #938D8D;
+	border-style: solid;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: auto;
+	border-radius: 20px;
+	-webkit-border-radius: 5px;/* for Safari and Chrome*/
+	-moz-border-radius: 5px;/* for Firefox*/
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: relative;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: center;
+	color: #D6CDCD;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background: #605C5C;
+	border-top-color: #938D8D;
+	border-bottom-color: #938D8D;
+	border-left-color: #938D8D;
+	border-right-color: #938D8D;
+	border: 1px solid;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: grey;
+  }
+  
+  .show {
+	display: block;
+  }
+  
+.statsBtn{
+	color: limegreen;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: table;
+	margin: 0 auto;
+}
+
+#flaskImage{
+	width: 45px;
+  height: 45px;
+  float: center;
+	cursor: pointer;
+}
+
+.statsTxt{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#barChartImage{
+	text-align: center;
+}
+
+#copyright{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 320px;
+}
+/*end container id*/

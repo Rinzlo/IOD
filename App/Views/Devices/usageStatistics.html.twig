@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+
+{% block title %}usageStatistics{% endblock %}
+
+{% block footer %}
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+	
+	<script>
+		function usageStatsBtn(form){
+			window.location = "usageStatistics.html";
+		}
+
+		function allDevFunction(){
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function(e) {
+  			if (!e.target.matches('.dropbtn')) {
+  				var myDropdown = document.getElementById("myDropdown");
+    			if (myDropdown.classList.contains('show')) {
+      				myDropdown.classList.remove('show');
+    			}
+  			}
+		}
+	</script>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="formatter mainPanel" id="container">
+		<table>
+			<h3>USAGE STATISTICS</h3>
+			<div class="navbar">
+				<div class="dropdown">
+					<button class="dropbtn" onclick="allDevFunction()">ALL DEVICES
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="#">Philip's Hue #1</a>
+						<a href="#">Philip's Hue RGB</a>
+						<a href="#">Philip's Hue #2</a>
+					</div>
+				</div>
+			</div>
+			<form action="">
+				<div class="statsBtn">
+					<img src="/{{app}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
+				</div>
+			</form>
+			<img src="/{{app}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
+		</table>
+	</div>
+
+{% endblock %}
+
