@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace Core;
 
@@ -24,9 +24,9 @@ class View
 
         $file = "../App/Views/$view"; // relative to Core directory
 
-        if(is_readable($file)){
+        if (is_readable($file)) {
             require $file;
-        }else{
+        } else {
             throw new \Exception("$file not found");
         }
     }
@@ -64,15 +64,16 @@ class View
     {
         static $twig = null;
 
-        if($twig === null){
-            $loader = new \Twig_Loader_Filesystem(dirname(__DIR__).'/App/Views');
+        if ($twig === null) {
+            // TODO: check to see it '../App/Views' would work instead
+            $loader = new \Twig_Loader_Filesystem(dirname(__DIR__) . '/App/Views');
             $twig = new \Twig_Environment($loader);
             $twig->addGlobal('current_user', Auth::getUser());
             $twig->addGlobal('flash_messages', \App\Flash::getMessages());
             $twig->addGlobal('app', Config::APP_NAME);
             $twig->addGlobal('public', Config::RECAPTCHA_PUBLIC);
         }
-        
+
         return $twig->render($template, $args);
     }
 }

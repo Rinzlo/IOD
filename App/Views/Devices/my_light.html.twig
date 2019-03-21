@@ -29,7 +29,7 @@
                 if($('#offImage').attr('src') === "/{{ app }}/images/Off.png"){
                     $.ajax({
                         type: 'GET',
-                        url: "{{ url }}/power/on",
+                        api: "{{ api }}/power/on",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
@@ -49,7 +49,7 @@
                 else{
                     $.ajax({
                         type: 'GET',
-                        url: "{{ url }}/power/off",
+                        api: "{{ api }}/power/off",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
@@ -80,7 +80,7 @@
                     // $('#showBrightness').html($bri);
                     $.ajax({
                         type: 'GET',
-                        url: "{{ url }}/bri/" + $bri,
+                        api: "{{ api }}/bri/" + $bri,
                         status: {
                             'bri':($bri),
                             'deviceid':'{{ light['id'] }}',

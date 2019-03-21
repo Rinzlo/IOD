@@ -98,6 +98,7 @@ class User extends Model
         die();
 
         if(isset($this->password)) {
+
             if (isset($this->password_confirmation) &&
                 $this->password != $this->password_confirmation) {
                 $this->errors[] = 'Password must match confirmation';
