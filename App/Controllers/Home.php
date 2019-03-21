@@ -1,10 +1,8 @@
 <?php
-declare(strict_types=1);
+declare (strict_types = 1);
 
 namespace App\Controllers;
 
-use App\Auth;
-use App\Config;
 use Core\View;
 
 class Home extends \Core\Controller
@@ -18,7 +16,7 @@ class Home extends \Core\Controller
     protected function before(): bool
     {
         // things to do before calling the action
-//        return false;
+        //        return false;
         return true;
     }
 

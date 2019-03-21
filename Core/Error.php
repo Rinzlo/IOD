@@ -37,7 +37,7 @@ class Error
      * @throws \Twig_Error_Runtime
      * @throws \Twig_Error_Syntax
      */
-    public static function exceptionHandler(\Exception $exception): void
+    public static function exceptionHandler($exception): void
     {
         // Code is 404 (not found) or 500 (general error)
         $code = $exception->getCode();

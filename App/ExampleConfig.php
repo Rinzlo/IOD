@@ -94,4 +94,11 @@ class ExampleConfig
      * @var string
      */
     const RECAPTCHA_PUBLIC = 'public_key';
+
+    /**
+     * hostname of iot api
+     * e.g.: 192.168.1.10:5001
+     * @var string
+     */
+    const IOT_API = 'ipaddress';
 }
