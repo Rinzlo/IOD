@@ -45,23 +45,35 @@ class Error
             $code = 500;
         http_response_code($code);
 
+        $exclass = get_class($exception);
+        $msg = $exception->getMessage();
+        $trace = $exception->getTraceAsString();
+        $file = $exception->getFile();
+        $line = $exception->getLine();
+
         if(Config::SHOW_ERRORS) {
-            echo "<h1>Fatal error</h1>";
-            echo "<p>Uncaught exception: '" . get_class($exception) . "'</p>";
-            echo "<p>Message: '" . $exception->getMessage() . "'</p>";
-            echo "<p>Stack trace:<pre>" . $exception->getTraceAsString() . "</pre></p>";
-            echo "<p>Thrown in '" . $exception->getFile() . "' on line " . $exception->getLine() . "</p>";
+            View::renderTemplate("$code.html.twig", [
+                'showErros' => true,
+                'exclass' => $exclass,
+                'msg' => $msg,
+                'trace' => $trace,
+                'file' => $file,
+                'line' => $line
+            ]);
         } else{
             $log = dirname(__DIR__) . '/logs/' . date('Y-m-d') . '.txt';
             ini_set('error_log', $log);
-
-            $message = "Uncaught exception: '" . get_class($exception) . "'";
-            $message .= " with message '" . $exception->getMessage() . "'";
-            $message .= "\nStack trace: " . $exception->getTraceAsString();
-            $message .= "\nThrown in '" . $exception->getFile() . "' on line " . $exception->getLine();
+            
+            $message = "Uncaught exception: '" . $exclass . "'";
+            $message .= " with message '" . $msg . "'";
+            $message .= "\nStack trace: " . $trace;
+            $message .= "\nThrown in '" . $file . "' on line " . $line;
 
             error_log($message);
-            View::renderTemplate("$code.html.twig");
+
+            View::renderTemplate("$code.html.twig", [
+                'showErros' => false,
+            ]);
         }
     }
 }

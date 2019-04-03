@@ -39,9 +39,6 @@ class Devices extends Authenticated
         $light = $devices[$id];
         $light['id'] = $id;
 
-        // var_dump($light['caps']['power']);
-        // exit;
-
         View::renderTemplate('Devices/my_light.html.twig', [
             'light' => $light,
             'api' => Config::IOT_API . '/api/cmd/' . $id,
@@ -51,7 +48,8 @@ class Devices extends Authenticated
     public function myDevicesAction(): void
     {
         $devices = $this->parseDevices();
-
+        // var_dump($devices);
+        // exit();
         $things = [];
         foreach ($devices as $key => $value) {
             $things[] = ['id' => $key, 'name' => $value['name']];
@@ -70,9 +68,9 @@ class Devices extends Authenticated
     public function parseDevices()
     {
         $devices = file_get_contents(Config::IOT_API . '/api/query');
-
+        
         $devices = json_decode($devices);
-        $devices = json_decode(json_encode($devices[1]), true);
+        $devices = json_decode(json_encode($devices), true)['devices'];
 
         return $devices;
     }

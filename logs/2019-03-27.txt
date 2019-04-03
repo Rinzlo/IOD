@@ -1,0 +1,20 @@
+[27-Mar-2019 21:03:03 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://45.63.49.226:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://45.63.49...')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[27-Mar-2019 21:32:09 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://45.63.49.226:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://45.63.49...')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70

@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block title %}Page not found{% endblock %}
+{% block body %}
+
+    {% block specificError %}
+    {% endblock %}
+
+    {% if showErros == true %}
+        <h1>Fatal error</h1>
+        <p>Uncaught exception:  {{exclass}}</p>
+        <p>Message: {{msg}}</p>
+        <p>Stack trace:<pre>{{trace}}</pre></p>
+        <p>Thrown in {{file}} on line {{line}}</p>
+    {% endif %}
+
+{% endblock %}

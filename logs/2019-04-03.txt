@@ -1,0 +1,76 @@
+[03-Apr-2019 01:02:32 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://45.63.49.226:8000/api/query): failed to open stream: Operation timed out'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://45.63.49...')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 03:12:55 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://45.63.49.226:8000/api/query): failed to open stream: Operation timed out'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://45.63.49...')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 03:13:55 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://45.63.49.226:8000/api/query): failed to open stream: Operation timed out'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://45.63.49...')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 03:13:55 UTC] PHP Fatal error:  Uncaught ErrorException: Error while sending QUERY packet. PID=84933 in /Applications/MAMP/htdocs/web-app/App/Models/User.php:168
+Stack trace:
+#0 [internal function]: Core\Error::errorHandler(2, 'Error while sen...', '/Applications/M...', 168, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Models/User.php(168): PDOStatement->execute()
+#2 /Applications/MAMP/htdocs/web-app/App/Auth.php(80): App\Models\User::findByID('55')
+#3 /Applications/MAMP/htdocs/web-app/Core/View.php(71): App\Auth::getUser()
+#4 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('500.html.twig', Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Error.php(75): Core\View::renderTemplate('500.html.twig', Array)
+#6 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/web-app/App/Models/User.php on line 168
+[03-Apr-2019 03:13:55 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/Core/Model.php(18): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 /Applications/MAMP/htdocs/web-app/App/Models/User.php(162): Core\Model::getDB()
+#2 /Applications/MAMP/htdocs/web-app/App/Auth.php(80): App\Models\User::findByID('55')
+#3 /Applications/MAMP/htdocs/web-app/Core/View.php(71): App\Auth::getUser()
+#4 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('Home/index.html...', Array)
+#5 /Applications/MAMP/htdocs/web-app/App/Controllers/Home.php(44): Core\View::renderTemplate('Home/index.html...')
+#6 [internal function]: App\Controllers\Home->indexAction()
+#7 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('index', Array)
+#9 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('')
+#10 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Model.php' on line 18
+[03-Apr-2019 03:13:55 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/Core/Model.php(18): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 /Applications/MAMP/htdocs/web-app/App/Models/User.php(162): Core\Model::getDB()
+#2 /Applications/MAMP/htdocs/web-app/App/Auth.php(80): App\Models\User::findByID('55')
+#3 /Applications/MAMP/htdocs/web-app/Core/Controller.php(84): App\Auth::getUser()
+#4 /Applications/MAMP/htdocs/web-app/App/Controllers/Authenticated.php(10): Core\Controller->requireLogin()
+#5 /Applications/MAMP/htdocs/web-app/Core/Controller.php(38): App\Controllers\Authenticated->before()
+#6 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#7 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#8 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Model.php' on line 18
+[03-Apr-2019 03:13:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Applications/MAMP/htdocs/web-app/Core/Model.php:18
+Stack trace:
+#0 /Applications/MAMP/htdocs/web-app/Core/Model.php(18): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 /Applications/MAMP/htdocs/web-app/App/Models/User.php(162): Core\Model::getDB()
+#2 /Applications/MAMP/htdocs/web-app/App/Auth.php(80): App\Models\User::findByID('55')
+#3 /Applications/MAMP/htdocs/web-app/Core/View.php(71): App\Auth::getUser()
+#4 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('500.html.twig', Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Error.php(75): Core\View::renderTemplate('500.html.twig', Array)
+#6 [internal function]: Core\Error::exceptionHandler(Object(PDOException))
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/web-app/Core/Model.php on line 18
