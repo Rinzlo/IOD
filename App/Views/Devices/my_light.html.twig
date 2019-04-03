@@ -120,12 +120,15 @@
             $(".colorPickerBtn").click(function(){
 
                 if($('.colorPicker').hasClass('off')){
+                    $('.colorPicker').css('display', 'block');
                     $('.colorPicker').removeClass('off');
                     $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
                 }else{
                     $('.colorPicker').addClass('off')
-                    $('.colorPicker').animate({'margin-right':'0%'},300);
-                    $('.colorPickerBtn').animate({'margin-right':'0%'},300);
+                    $('.colorPicker').stop().animate({'margin-right':'0%'},300, function(){
+                        $('.colorPicker').css('display', 'none');
+                    });
+                    {#$('.colorPickerBtn').animate({'margin-right':'0%'},300);#}
                 }
             });
         });
