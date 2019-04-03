@@ -74,3 +74,27 @@ Stack trace:
 #6 [internal function]: Core\Error::exceptionHandler(Object(PDOException))
 #7 {main}
   thrown in /Applications/MAMP/htdocs/web-app/Core/Model.php on line 18
+[03-Apr-2019 21:15:49 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
+#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 21:16:08 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
+#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 21:17:16 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
+#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
