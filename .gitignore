@@ -1,3 +1,4 @@
 /.idea
 /App/Config.php
 /App/dbSetup.sql
+/vendor/
