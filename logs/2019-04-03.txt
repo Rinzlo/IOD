@@ -74,103 +74,27 @@ Stack trace:
 #6 [internal function]: Core\Error::exceptionHandler(Object(PDOException))
 #7 {main}
   thrown in /Applications/MAMP/htdocs/web-app/Core/Model.php on line 18
-[03-Apr-2019 23:23:16 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected character "$".'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Lexer.php(202): Twig_Lexer->lexExpression()
-#1 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Lexer.php(105): Twig_Lexer->lexVar()
-#2 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
-#3 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
-#4 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
-#5 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('Devices/my_ligh...')
-#6 /Applications/MAMP/htdocs/web-app/Core/View.php(77): Twig_Environment->render('Devices/my_ligh...', Array)
-#7 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('Devices/my_ligh...', Array)
-#8 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(49): Core\View::renderTemplate('Devices/my_ligh...', Array)
-#9 [internal function]: App\Controllers\Devices->myLightAction()
-#10 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#11 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myLight', Array)
-#12 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/my-ligh...')
-#13 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Views/Devices/my_light.html.twig' on line 35
-[03-Apr-2019 23:24:22 UTC] Uncaught exception: 'Twig_Error_Syntax' with message 'Unexpected character "$".'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Lexer.php(202): Twig_Lexer->lexExpression()
-#1 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Lexer.php(105): Twig_Lexer->lexVar()
-#2 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(512): Twig_Lexer->tokenize(Object(Twig_Source))
-#3 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->tokenize(Object(Twig_Source))
-#4 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
-#5 /Applications/MAMP/htdocs/web-app/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_Environment->loadTemplate('Devices/my_ligh...')
-#6 /Applications/MAMP/htdocs/web-app/Core/View.php(77): Twig_Environment->render('Devices/my_ligh...', Array)
-#7 /Applications/MAMP/htdocs/web-app/Core/View.php(48): Core\View::getTemplate('Devices/my_ligh...', Array)
-#8 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(49): Core\View::renderTemplate('Devices/my_ligh...', Array)
-#9 [internal function]: App\Controllers\Devices->myLightAction()
-#10 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#11 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myLight', Array)
-#12 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/my-ligh...')
-#13 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Views/Devices/my_light.html.twig' on line 35
-[03-Apr-2019 23:30:35 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Power not found'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power/on')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 113
-[03-Apr-2019 23:30:41 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
-[03-Apr-2019 23:31:15 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
-[03-Apr-2019 23:32:00 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
-[03-Apr-2019 23:32:22 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
-[03-Apr-2019 23:32:22 UTC] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Power not found'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('power/on')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 113
-[03-Apr-2019 23:33:22 UTC] Uncaught exception: 'ErrorException' with message 'Undefined variable: id'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(16): Core\Error::errorHandler(8, 'Undefined varia...', '/Applications/M...', 16, Array)
-#1 [internal function]: App\Controllers\Devices->powerAction()
+[03-Apr-2019 21:15:49 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
 #2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('power', Array)
-#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/power')
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
 #5 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 16
-[03-Apr-2019 23:33:26 UTC] Uncaught exception: 'ErrorException' with message 'Undefined variable: id'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(16): Core\Error::errorHandler(8, 'Undefined varia...', '/Applications/M...', 16, Array)
-#1 [internal function]: App\Controllers\Devices->powerAction()
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 21:16:08 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
 #2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('power', Array)
-#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/power')
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
 #5 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 16
-[03-Apr-2019 23:33:40 UTC] Uncaught exception: 'ErrorException' with message 'Undefined variable: id'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(16): Core\Error::errorHandler(8, 'Undefined varia...', '/Applications/M...', 16, Array)
-#1 [internal function]: App\Controllers\Devices->powerAction()
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[03-Apr-2019 21:17:16 UTC] Uncaught exception: 'Error' with message 'Undefined class constant 'IOT_API''
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#1 [internal function]: App\Controllers\Devices->myDevicesAction()
 #2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('power', Array)
-#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/power')
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
 #5 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 16
-[03-Apr-2019 23:34:37 UTC] Uncaught exception: 'ErrorException' with message 'Undefined variable: id'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(16): Core\Error::errorHandler(8, 'Undefined varia...', '/Applications/M...', 16, Array)
-#1 [internal function]: App\Controllers\Devices->powerAction()
-#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('power', Array)
-#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/power')
-#5 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 16
-[03-Apr-2019 23:34:42 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/')
-#1 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
-[03-Apr-2019 23:35:09 UTC] Uncaught exception: 'ErrorException' with message 'Undefined variable: id'
-Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(16): Core\Error::errorHandler(8, 'Undefined varia...', '/Applications/M...', 16, Array)
-#1 [internal function]: App\Controllers\Devices->powerAction()
-#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
-#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('power', Array)
-#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('devices/power')
-#5 {main}
-Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 16
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70

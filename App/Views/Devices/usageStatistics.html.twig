@@ -25,33 +25,144 @@
 		}
 	</script>
 
+	<script>
+		jQuery(function(){
+		    const config = {
+		        type: 'bar',
+				data: {
+                    labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    datasets : [
+                        {
+                            label: "Location1",
+                            backgroundColor: "rgba(255, 0, 0, 0.8)",
+                            data : [350, 200, 550, 180, 200, 660, 310]
+                        }
+                    ]
+				},
+				responsive: false,
+				options: {
+		            legend:{
+		                labels:{
+		                    fontColor: '#fff'
+						}
+					},
+		            scales:{
+		                xAxes:[{
+		                    gridLines:{
+		                        color: 'fff',
+							},
+		                    ticks:{
+                                fontColor: '#fff',
+							},
+							scaleLabel:{
+		                        labelString: 'Power Consumption (KW)'
+							}
+						}],
+						yAxes:[{
+                            gridLines:{
+                                color: 'fff'
+                            },
+		                    ticks:{
+                                fontColor: '#fff',
+		                        min: 0,
+								max: 1000
+							},
+                            scaleLabel:{
+                                labelString: 'Day of the week'
+                            }
+						}]
+					}
+				}
+			}
+
+			const context = jQuery(".barChartContainer__barChart")
+			const chart = new Chart(context, config)
+
+            $('.dropdown-content__1').click(function (){
+                config.data.datasets = [
+                    {
+                        label: "Location1",
+                        backgroundColor: "rgba(255, 0, 0, 0.8)",
+                        data : [350, 200, 550, 180, 200, 660, 310]
+                    }
+                ];
+                const chart = new Chart(context, config)
+            });
+
+            $('.dropdown-content__2').click(function (){
+                config.data.datasets = [
+                    {
+                        label: "Location2",
+                        backgroundColor: "rgba(0, 255, 0, 0.8)",
+                        data : [100, 200, 120, 440, 260, 600, 520]
+                    }
+                ];
+                const chart = new Chart(context, config)
+            });
+
+            $('.dropdown-content__3').click(function (){
+                config.data.datasets = [
+                    {
+                        label: "Location3",
+                        backgroundColor: "rgba(0, 0, 255, 0.8)",
+                        data : [150, 120, 370, 290, 640, 520, 410]
+                    }
+                ];
+                const chart = new Chart(context, config)
+            });
+
+            $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
+            $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
+            //$('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
+            $('nav').css('display', 'none');
+            $('.header__btnNavDrawer').click(function(){
+                {#window.location.href="/{{ app }}/devices/my-devices";#}
+                window.location.href="/{{ app }}";
+            });
+
+            $('.header__btnBack').click(function(){
+                window.location.href="/{{ app }}";
+            });
+		})
+
+	</script>
+
 {% endblock %}
 
 {% block body %}
 
 <div class="formatter mainPanel" id="container">
-		<table>
-			<h3>USAGE STATISTICS</h3>
-			<div class="navbar">
-				<div class="dropdown">
-					<button class="dropbtn" onclick="allDevFunction()">ALL DEVICES
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="dropdown-content" id="myDropdown">
-						<a href="#">Philip's Hue #1</a>
-						<a href="#">Philip's Hue RGB</a>
-						<a href="#">Philip's Hue #2</a>
-					</div>
-				</div>
+	<table>
+		<h3>USAGE STATISTICS</h3>
+
+		<div class="navbar">
+			<div class="dropdown">
+				<button class="dropbtn" onclick="allDevFunction()">ALL DEVICES
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<span class="dropdown-content" id="myDropdown">
+					<a href="#" class="dropdown-content__1">Philip's Hue #1</a>
+					<a href="#" class="dropdown-content__2">Philip's Hue RGB</a>
+					<a href="#" class="dropdown-content__3">Philip's Hue #2</a>
+				</span>
 			</div>
-			<form action="">
-				<div class="statsBtn">
-					<img src="/{{app}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
-				</div>
-			</form>
-			<img src="/{{app}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
-		</table>
-	</div>
+		</div>
+
+		<form>
+		</form>
+		<div class="barChartContainer" style="height: 250px; width: 600px; margin: 0 auto;">
+			<canvas class="barChartContainer__barChart"></canvas>
+		</div>
+		{#
+		<form action="">
+			<div class="statsBtn">
+				<img src="/{{app}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
+			</div>
+		</form>
+		<img src="/{{app}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
+		#}
+	</table>
+</div>
 
 {% endblock %}
 
