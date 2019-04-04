@@ -43,7 +43,7 @@ $router->add('login', ['controller' => 'Accounts', 'action' => 'login']);
 $router->add('logout', ['controller' => 'Accounts', 'action' => 'logout']);
 $router->add('password/reset/{token:[\da-f]+}', ['controller' => 'Password', 'action' => 'reset']);
 $router->add('accounts/activated/{token:[\da-f]+}', ['controller' => 'Accounts', 'action' => 'activate']);
-$router->add('devices/power/{id:[\da-f]+}', ['controller' => 'Devices', 'action' => 'power']);
+// $router->add('devices/power/{id:[\da-f]+}', ['controller' => 'Devices', 'action' => 'power']);
 $router->add('devices/my-light/{id:[\s\S]*}', ['controller' => 'Devices', 'action' => 'myLight']);
 $router->add('{controller}/{action}');
 

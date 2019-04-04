@@ -13,12 +13,12 @@ class Devices extends Authenticated
     // TODO: returns previous page no matter what.
     public function powerAction()
     {
+        return "hi";
         
         $id = "dummy*light1";
 
         $client = new \GuzzleHttp\Client();
-        // $client->configureDefaults();
-        $response = $client->request('GET', Config::IOT_API . '/api/cmd/dummy*light1/power/on');
+        $response = $client->request('GET', Config::IOT_API . '/api/cmd/'.$id.'/power/on');
 
         // echo $response->getStatusCode(); # 200
         // echo $response->getHeaderLine('content-type'); # 'application/json; charset=utf8'
