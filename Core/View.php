@@ -70,6 +70,7 @@ class View
             $twig = new \Twig_Environment($loader);
             $twig->addGlobal('current_user', Auth::getUser());
             $twig->addGlobal('flash_messages', \App\Flash::getMessages());
+            $twig->addGlobal('origin', $_SERVER['HTTP_HOST']);
             $twig->addGlobal('app', Config::APP_NAME);
             $twig->addGlobal('public', Config::RECAPTCHA_PUBLIC);
         }

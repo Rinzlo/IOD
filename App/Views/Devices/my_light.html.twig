@@ -18,6 +18,7 @@
             $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
             $('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
+            
             $('nav').css('display', 'none');
             $('.header__btnNavDrawer').click(function(){
                 window.location.href="/{{ app }}/devices/my-devices";
@@ -28,42 +29,48 @@
             });
             $('#offImage').click(function(){
                 if($('#offImage').attr('src') === "/{{ app }}/images/Off.png"){
+                    // power on
                     $.ajax({
                         type: 'GET',
-                        api: "{{ api }}/power/on",
+                        url: "{{ iotUrl }}/power/on",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
                             'on':true
                         }
                     }).done((data) => {
-                        if(data.indexOf("error") == -1){
+                        console.log(data);
+                        {# if(data.indexOf("error") == -1){ #}
                             $('#showBrightness').html($bri);
-                        }else{
+                        {# }else{
                             $('#showBrightness').html("Access failed.");
-                        }
+                        } #}
                         $('#offImage').attr('src', "/{{ app }}/images/On.png");
                     }).fail( (data) => {
+                        console.log(data);
                         $('#showBrightness').html("Connection failed");
                     })
                 }
                 else{
+                    // power off
                     $.ajax({
                         type: 'GET',
-                        api: "{{ api }}/power/off",
+                        url: "{{ iotUrl }}/power/off",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
                             'on':false
                         }
                     }).done((data) => {
-                        if(data.indexOf("error") == -1){
+                        console.log(data);
+                        {# if(data.indexOf("error") == -1){ #}
                             $('#showBrightness').html($bri);
-                        }else{
+                        {# }else{
                             $('#showBrightness').html("Access failed.");
-                        }
+                        } #}
                         $('#offImage').attr('src', "/{{ app }}/images/Off.png");
                     }).fail( (data) => {
+                        console.log(data);
                         $('#showBrightness').html("Connection failed");
                     })
                 }
@@ -81,18 +88,18 @@
                     // $('#showBrightness').html($bri);
                     $.ajax({
                         type: 'GET',
-                        api: "{{ api }}/bri/" + $bri,
+                        url: "{{ iotUrl }}/bri/" + $bri,
                         status: {
                             'bri':($bri),
                             'deviceid':'{{ light['id'] }}',
                             'on':true
                         }
                     }).done( (data) => {
-                        if(data.indexOf("error") == -1){
+                        {# if(data.indexOf("error") == -1){ #}
                             $('#showBrightness').html($bri);
-                        }else{
+                        {# }else{
                             $('#showBrightness').html("Access failed.");
-                        }
+                        } #}
                     }).fail( (data) => {
                         $('#showBrightness').html("Connection failed");
                     })
