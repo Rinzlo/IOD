@@ -1,6 +1,6 @@
 <?php
 
-declare (strict_types = 1);
+// declare (strict_types = 1);
 
 namespace App\Controllers;
 
@@ -10,9 +10,29 @@ use Core\View;
 class Devices extends Authenticated
 {
 
-    public function lightOnOffAction(): void
+    // TODO: returns previous page no matter what.
+    public function powerAction()
     {
+        
+        $id = "dummy*light1";
 
+        $client = new \GuzzleHttp\Client();
+        // $client->configureDefaults();
+        $response = $client->request('GET', Config::IOT_API . '/api/cmd/dummy*light1/power/on');
+
+        // echo $response->getStatusCode(); # 200
+        // echo $response->getHeaderLine('content-type'); # 'application/json; charset=utf8'
+        // echo $response->getBody(); # '{"id": 1420053, "name": "guzzle", ...}'
+
+        # Send an asynchronous request.
+        // $request = new \GuzzleHttp\Psr7\Request('GET', Config::IOT_API . '/api/cmd/'.$id.'/power/on');
+        // $promise = $client->sendAsync($request)->then(function ($response) {
+        //     // echo $response->getBody();
+        // });
+        // $promise->wait();
+
+        // echo $response->getBody();
+        return $response;
     }
 
     public function usageStatisticsAction(): void
@@ -39,9 +59,12 @@ class Devices extends Authenticated
         $light = $devices[$id];
         $light['id'] = $id;
 
+        // var_dump($light);
+        // die();
+
         View::renderTemplate('Devices/my_light.html.twig', [
             'light' => $light,
-            'api' => Config::IOT_API . '/api/cmd/' . $id,
+            'iotUrl' => Config::IOT_API . '/api/cmd/' . $id,
         ]);
     }
 
@@ -77,7 +100,7 @@ class Devices extends Authenticated
 
     public function getDevice(string $id)
     {
-        $device = file_get_contents(Config::IOT_API . '/cmd/' . $id . '/query');
+        $device = file_get_contents(Config::IOT_API . '/api/cmd/' . $id . '/query');
 
         return $device[$id] ?? null;
     }

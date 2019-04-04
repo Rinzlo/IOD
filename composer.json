@@ -7,7 +7,9 @@
         "php-http/message": "^1.7",
         "phpmailer/phpmailer": "^6.0",
         "dapphp/securimage": "^4.0",
-        "google/recaptcha": "^1.2"
+        "google/recaptcha": "^1.2",
+        "guzzlehttp/guzzle": "^6.3",
+        "sqmk/phue": "^1.7"
     },
   "autoload": {
     "psr-4": {
