@@ -21,7 +21,7 @@
     <div class="mainPanel"><br><br>
         <label class="mainPanel__labelDevicesInfo">MY DEVICES</label><br><br>
         {% for device in devices %}
-            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btnDevices"><img src="/{{ app }}/images/LightBulb.png" class="btnDevices__icon" align="center"><span class="btnDevices__name">{{ device['name'] }}</span></button></a><br>
+            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btnDevices"><img src="/{{ app }}/images/LightBulb.png" class="btnDevices__icon" align="center"><span class="btnDevices__name">{{ device['name'] }}</span></button></a>
         {% endfor %}
     </div>
 

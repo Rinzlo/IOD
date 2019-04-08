@@ -106,7 +106,30 @@
         jQuery(function($){
             $(".colorPicker__palette").spectrum({
                 showInput: true,
-                flat: true
+                flat: true,
+
+                change: function(color){
+                    $colorData = $(".colorPicker__palette").spectrum("get");
+                    $('#showColor').html($colorData.toRgbString());
+                    console.log($colorData['_r']);
+                    $.ajax({
+                        type: 'GET',
+                        url: "{{ iotUrl }}/col/" + $colorData['_r'] + "/" + $colorData['_g'] + "/" + $colorData['_b'],
+                        status: {
+                            'bri':($colorData),
+                            'deviceid':'{{ light['id'] }}',
+                            'on':true
+                        }
+                    }).done( (data) => {
+                        {# if(data.indexOf("error") == -1){ #}
+                        $('#showColor').html($colorData);
+                        {# }else{
+                            $('#showColor').html("Access failed.");
+                        } #}
+                    }).fail( (data) => {
+                        $('#showColor').html("Connection failed");
+                    })
+                }
             });
 
             $(".sp-cancel").click(function(){
@@ -133,6 +156,7 @@
                 $('.colorPicker').removeClass('off');
                 $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
             }
+
             function slideOut(){
                 $('.colorPicker').addClass('off');
                 $('.colorPicker').removeClass('on');
