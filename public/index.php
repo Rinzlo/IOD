@@ -10,6 +10,14 @@ ini_set('session.cookie_lifetime', '864000'); // ten days in seconds
  */
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
+// var_dump($_SERVER);
+// exit();
+
+/**
+ * philips hue api package
+ */
+// $client = new \Phue\Client('10.0.1.1', 'yourusername');
+
 /**
  * Error and Exception handling
  */
@@ -38,6 +46,7 @@ $router->add('login', ['controller' => 'Accounts', 'action' => 'login']);
 $router->add('logout', ['controller' => 'Accounts', 'action' => 'logout']);
 $router->add('password/reset/{token:[\da-f]+}', ['controller' => 'Password', 'action' => 'reset']);
 $router->add('accounts/activated/{token:[\da-f]+}', ['controller' => 'Accounts', 'action' => 'activate']);
+// $router->add('devices/power/{id:[\da-f]+}', ['controller' => 'Devices', 'action' => 'power']);
 $router->add('devices/my-light/{id:[\s\S]*}', ['controller' => 'Devices', 'action' => 'myLight']);
 $router->add('{controller}/{action}');
 
