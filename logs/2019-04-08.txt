@@ -1,0 +1,58 @@
+[08-Apr-2019 06:09:17 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://149.248.19.131:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://149.248....')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[08-Apr-2019 06:09:41 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://149.248.19.131:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 70, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(70): file_get_contents('http://149.248....')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(50): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 70
+[08-Apr-2019 06:10:33 UTC] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(35): Core\Error::errorHandler(8, 'Undefined index...', '/Applications/M...', 35, Array)
+#1 [internal function]: App\Controllers\Devices->myLightAction()
+#2 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myLight', Array)
+#4 /Applications/MAMP/htdocs/web-app/public/index.php(44): Core\Router->dispatch('Devices/my-ligh...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 35
+[08-Apr-2019 06:20:20 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://149.248.19.131:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 93, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(93): file_get_contents('http://149.248....')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(73): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(50): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 93
+[08-Apr-2019 06:20:44 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://149.248.19.131:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 93, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(93): file_get_contents('http://149.248....')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(73): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(50): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 93
+[08-Apr-2019 18:55:50 UTC] Uncaught exception: 'ErrorException' with message 'file_get_contents(http://149.248.19.131:8000/api/query): failed to open stream: Connection refused'
+Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conten...', '/Applications/M...', 93, Array)
+#1 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(93): file_get_contents('http://149.248....')
+#2 /Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php(73): App\Controllers\Devices->parseDevices()
+#3 [internal function]: App\Controllers\Devices->myDevicesAction()
+#4 /Applications/MAMP/htdocs/web-app/Core/Controller.php(39): call_user_func_array(Array, Array)
+#5 /Applications/MAMP/htdocs/web-app/Core/Router.php(108): Core\Controller->__call('myDevices', Array)
+#6 /Applications/MAMP/htdocs/web-app/public/index.php(50): Core\Router->dispatch('Devices/my-devi...')
+#7 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 93

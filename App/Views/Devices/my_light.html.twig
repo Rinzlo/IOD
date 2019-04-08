@@ -78,7 +78,6 @@
                 slide:function(event, ui) {
                     $bri = ui.value;
                     $('#showBrightness').html($bri);
-                    // $('#showBrightness').html($bri);
                     $.ajax({
                         type: 'GET',
                         api: "{{ api }}/bri/" + $bri,
@@ -100,9 +99,6 @@
                 }
             });
 
-            $(".mainPanel__colorPicker").spectrum({
-                color: "#f00"
-            });
         });
     </script>
 
@@ -110,27 +106,40 @@
         jQuery(function($){
             $(".colorPicker__palette").spectrum({
                 showInput: true,
-                flat: true,
-
-                change: function(color){
-                    $colorData = $(".colorPicker__palette").spectrum("get");
-                    $('#showColor').html($colorData.toRgbString());
-                }
+                flat: true
             });
+
+            $(".sp-cancel").click(function(){
+                slideOut();
+            });
+
+            $(".sp-choose").click(function(){
+                $colorData = $(".colorPicker__palette").spectrum("get");
+                $('#showColor').html($colorData.toRgbString());
+                slideOut();
+            });
+
             $(".colorPickerBtn").click(function(){
-
                 if($('.colorPicker').hasClass('off')){
-                    $('.colorPicker').css('display', 'block');
-                    $('.colorPicker').removeClass('off');
-                    $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
-                }else{
-                    $('.colorPicker').addClass('off')
-                    $('.colorPicker').stop().animate({'margin-right':'0%'},300, function(){
-                        $('.colorPicker').css('display', 'none');
-                    });
-                    {#$('.colorPickerBtn').animate({'margin-right':'0%'},300);#}
+                    slideIn();
+                }
+                else{
+                    slideOut();
                 }
             });
+
+            function slideIn(){
+                $('.colorPicker').css('display', 'block');
+                $('.colorPicker').removeClass('off');
+                $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+            }
+            function slideOut(){
+                $('.colorPicker').addClass('off');
+                $('.colorPicker').removeClass('on');
+                $('.colorPicker').stop().animate({'margin-right':'0%'},300, function(){
+                    $('.colorPicker').css('display', 'none');
+                });
+            }
         });
     </script>
 
@@ -147,7 +156,7 @@
 
         <label id="labelBrightness" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Brightness:&nbsp;</label><span id="showBrightness" class="mainPanel__labelDeviceInfo-color-white"></span><br>
         <label id="labelColor" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Color:&nbsp;</label><span id="showColor" class="mainPanel__labelDeviceInfo-color-white"></span><br><br>
-        <img  class="deviceBtns__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=90px>
+        <a href="/{{ app }}/Devices/usage-statistics"><img  class="deviceBtns__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=90px></a>
         <button class="colorPickerBtn"><img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn__icon" width=90px height=90px></button>
         <div class="colorPicker off"><span class="colorPicker__palette" /></div>
     </div>

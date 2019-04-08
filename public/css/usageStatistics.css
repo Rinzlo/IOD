@@ -94,7 +94,7 @@ h3{
   .dropdown-content a:hover {
 	background-color: grey;
   }
-
+  
   .show {
 	display: block;
   }
@@ -129,4 +129,13 @@ h3{
 	font-size: 10px;
 	padding-top: 320px;
 }
+
+.barChartContainer{
+	position: absolute;
+	top: 190px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
 /*end container id*/
+
+
