@@ -55,7 +55,7 @@
                     // power off
                     $.ajax({
                         type: 'GET',
-                        url: "{{iotUrl}}/power/on",
+                        url: "{{iotUrl}}/power/off",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
