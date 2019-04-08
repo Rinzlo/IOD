@@ -13,12 +13,11 @@ class Devices extends Authenticated
     // TODO: returns previous page no matter what.
     public function powerAction()
     {
-        return "hi";
         
         $id = "dummy*light1";
 
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', Config::IOT_API . '/api/cmd/'.$id.'/power/on');
+        // $client = new \GuzzleHttp\Client();
+        // $response = $client->request('GET', Config::IOT_API . '/api/cmd/'.$id.'/power/on');
 
         // echo $response->getStatusCode(); # 200
         // echo $response->getHeaderLine('content-type'); # 'application/json; charset=utf8'
@@ -32,7 +31,14 @@ class Devices extends Authenticated
         // $promise->wait();
 
         // echo $response->getBody();
-        return $response;
+
+        $device = file_get_contents(Config::IOT_API . '/api/cmd/'.$id.'/power/on');
+        
+        $device = json_decode($device);
+        $device = json_encode(json_decode(json_encode($device), true)['devices'][$id]);
+        // var_dump($device);
+        // die();
+        return $device;
     }
 
     public function usageStatisticsAction(): void

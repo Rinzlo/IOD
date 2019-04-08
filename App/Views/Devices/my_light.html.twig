@@ -32,7 +32,7 @@
                     // power on
                     $.ajax({
                         type: 'GET',
-                        url: "{{ iotUrl }}/power/on",
+                        url: "{{iotUrl}}/power/on",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
@@ -55,7 +55,7 @@
                     // power off
                     $.ajax({
                         type: 'GET',
-                        url: "{{ iotUrl }}/power/off",
+                        url: "{{iotUrl}}/power/on",
                         status: {
                             'bri':$bri,
                             'deviceid':'{{ light['id'] }}',
@@ -122,6 +122,24 @@
                 change: function(color){
                     $colorData = $(".colorPicker__palette").spectrum("get");
                     $('#showColor').html($colorData.toRgbString());
+                    console.log($colorData['_r']);
+                    $.ajax({
+                        type: 'GET',
+                        url: "{{ iotUrl }}/col/" + $colorData['_r'] + "/" + $colorData['_g'] + "/" + $colorData['_b'],
+                        status: {
+                            'bri':($colorData),
+                            'deviceid':'{{ light['id'] }}',
+                            'on':true
+                        }
+                    }).done( (data) => {
+                        {# if(data.indexOf("error") == -1){ #}
+                            $('#showColor').html($colorData);
+                        {# }else{
+                            $('#showColor').html("Access failed.");
+                        } #}
+                    }).fail( (data) => {
+                        $('#showColor').html("Connection failed");
+                    })
                 }
             });
             $(".colorPickerBtn").click(function(){

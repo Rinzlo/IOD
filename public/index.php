@@ -10,6 +10,9 @@ ini_set('session.cookie_lifetime', '864000'); // ten days in seconds
  */
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
+// var_dump($_SERVER);
+// exit();
+
 /**
  * philips hue api package
  */
