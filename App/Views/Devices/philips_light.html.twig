@@ -107,29 +107,42 @@
         jQuery(function($){
             $(".colorPicker__palette").spectrum({
                 showInput: true,
-                flat: true,
-
-                change: function(color){
-                    $colorData = $(".colorPicker__palette").spectrum("get");
-                    $('#showColor').html($colorData.toRgbString());
-                }
+                flat: true
             });
+
+            $(".sp-cancel").click(function(){
+                slideOut();
+            });
+
+            $(".sp-choose").click(function(){
+                $colorData = $(".colorPicker__palette").spectrum("get");
+                $('#showColor').html($colorData.toRgbString());
+                slideOut();
+            });
+
             $(".colorPickerBtn").click(function(){
-
                 if($('.colorPicker').hasClass('off')){
-                    $('.colorPicker').css('display', 'block');
-                    $('.colorPicker').removeClass('off');
-                    $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
-                }else{
-                    $('.colorPicker').addClass('off')
-                    $('.colorPicker').stop().animate({'margin-right':'0%'},300, function(){
-                        $('.colorPicker').css('display', 'none');
-                    });
-                    {#$('.colorPickerBtn').animate({'margin-right':'0%'},300);#}
+                    slideIn();
+                }
+                else{
+                    slideOut();
                 }
             });
+
+            function slideIn(){
+                $('.colorPicker').css('display', 'block');
+                $('.colorPicker').removeClass('off');
+                $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+            }
+            function slideOut(){
+                $('.colorPicker').addClass('off');
+                $('.colorPicker').removeClass('on');
+                $('.colorPicker').stop().animate({'margin-right':'0%'},300, function(){
+                    $('.colorPicker').css('display', 'none');
+                });
+            }
         });
-    </script>
+    </script>s
 
 {% endblock %}
 
