@@ -108,13 +108,6 @@
             $(".colorPicker__palette").spectrum({
                 showInput: true,
                 flat: true
-                /*
-                change: function(color){
-                    $colorData = $(".colorPicker__palette").spectrum("get");
-                    $('#showColor').html($colorData.toRgbString());
-                    console.log("debug");
-                }
-                */
             });
 
             $(".sp-cancel").click(function(){
@@ -129,15 +122,18 @@
 
             $(".colorPickerBtn").click(function(){
                 if($('.colorPicker').hasClass('off')){
-                    $('.colorPicker').css('display', 'block');
-                    $('.colorPicker').removeClass('off');
-                    $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+                    slideIn();
                 }
                 else{
                     slideOut();
                 }
             });
 
+            function slideIn(){
+                $('.colorPicker').css('display', 'block');
+                $('.colorPicker').removeClass('off');
+                $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+            }
             function slideOut(){
                 $('.colorPicker').addClass('off');
                 $('.colorPicker').removeClass('on');
@@ -146,7 +142,7 @@
                 });
             }
         });
-    </script>
+    </script>s
 
 {% endblock %}
 
