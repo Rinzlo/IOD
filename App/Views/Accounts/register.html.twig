@@ -46,6 +46,8 @@
                 show: false,
                 innerToggle: 'focus'
             });
+
+            $('.pageTitle').html("Register");
         });
     </script>
 
@@ -63,8 +65,8 @@
             {% endfor %}
         </ul>
     {% endif %}
-    <div class="mainPanel">
-        <div class="signUpPanel formatter">
+    <!-- <div class="mainPanel"> -->
+    <div class="signUpPanel formatter">
         <form method="post" action="/{{ app }}/accounts/create" id="formSignup" class="signUpForm"><br><br>
             <!-- <label for="inputName">Username</label> -->
             <input id="inputName" class="signUpForm__info" name="username" placeholder="Username" value="{{ user.username }}" autofocus required /><br><br>
@@ -86,8 +88,8 @@
             <input type="submit" class="signUpForm__btnSubmit" value="Sign up">
 
         </form>
-        </div>
     </div>
+    <!-- </div> -->
 
 
 {% endblock %}

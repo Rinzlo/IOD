@@ -5,25 +5,39 @@
 {% block footer %}
     <script>
         $(document).ready(function() {
-            $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
+            /*
+            //$('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
             //$('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
             $('nav').css('display', 'none');
             $('.header__btnNavDrawer').click(function(){
                 window.location.href="/{{ app }}";
             });
+            */
+            $('.btnBack').click(function(){
+                window.location.href="/{{ app }}";
+            });
+            $('.pageTitle').html("My Devices");
         });
     </script>
 {% endblock %}
 
 {% block body %}
 
-    <div class="mainPanel"><br><br>
-        <label class="mainPanel__labelDevicesInfo">MY DEVICES</label><br><br>
+    <!-- <div class="mainPanel"> --><br><br>
+        <label class="mainPanel__labelDevicesInfo">Available Device List</label><br><br>
         {% for device in devices %}
-            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}"><button class="btnDevices"><img src="/{{ app }}/images/LightBulb.png" class="btnDevices__icon" align="center"><span class="btnDevices__name">{{ device['name'] }}</span></button></a>
+            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}" class="btnLink">
+                <button class="btnLighting btnDevices">
+                    <img src="/{{ app }}/images/gradient_light_1.png" class="btnDevices__icon" align="center">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="btnDevices__name">{{ device['name'] }}</span>
+                </button>
+            </a>
         {% endfor %}
-    </div>
-
+    <!-- </div> -->
 
 {% endblock %}

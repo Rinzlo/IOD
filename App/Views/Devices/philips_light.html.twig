@@ -24,7 +24,7 @@
                 window.location.href="/{{ app }}";
             });
 
-            $('.header__btnBack').click(function(){
+            $('.btnBack').click(function(){
                 window.location.href="/{{ app }}";
             });
 
@@ -44,7 +44,7 @@
                         }else{
                             $('#showBrightness').html("Access failed.");
                         }
-                        $('#offImage').attr('src', "/{{ app }}/images/On.png");
+                        $('#offImage').attr('src', "/{{ app }}/images/newOn.png");
                     }).fail( (data) => {
                         $('#showBrightness').html("Connection failed");
                     })
@@ -64,7 +64,7 @@
                         }else{
                             $('#showBrightness').html("Access failed.");
                         }
-                        $('#offImage').attr('src', "/{{ app }}/images/Off.png");
+                        $('#offImage').attr('src', "/{{ app }}/images/newOff.png");
                     }).fail( (data) => {
                         $('#showBrightness').html("Connection failed");
                     })
@@ -80,7 +80,6 @@
                 slide:function(event, ui) {
                     $bri = ui.value;
                     $('#showBrightness').html($bri);
-                    // $('#showBrightness').html($bri);
                     $.ajax({
                         type: 'GET',
                         url: "{{ url }}/bri/" + $bri,
@@ -132,8 +131,9 @@
             function slideIn(){
                 $('.colorPicker').css('display', 'block');
                 $('.colorPicker').removeClass('off');
-                $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+                $('.colorPicker').animate({'margin-right':'35%'},300).addClass('on');
             }
+
             function slideOut(){
                 $('.colorPicker').addClass('off');
                 $('.colorPicker').removeClass('on');
@@ -141,13 +141,26 @@
                     $('.colorPicker').css('display', 'none');
                 });
             }
+
+            $('.pageTitle').html("Device Operation");
         });
-    </script>s
+    </script>
 
 {% endblock %}
 
 {% block body %}
+    <br><img src="/{{ app }}/images/gradient_light_1.png" id="lightBulbImage" class="mainPanel__icon" width=50px height=50px><br><br>
+    <label class="mainPanel__labelDeviceName mainPanel__labelDeviceInfo-color-white">{{ light['name'] }}</label><br><br><br><br>
+    <img id="offImage" class="mainPanel__offImage" src="/{{ app }}/images/newOff.png" width=140px height=80px><br><br>
 
+    <div class="mainPanel__lightSlider" id="lightSlider"></div><br>
+
+    <label id="labelBrightness" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Brightness:&nbsp;</label><span id="showBrightness" class="mainPanel__labelDeviceInfo-color-white"></span><br>
+    <label id="labelColor" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Color:&nbsp;</label><span id="showColor" class="mainPanel__labelDeviceInfo-color-white"></span><br><br>
+    <img  class="deviceBtns__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=90px>
+    {#<button class="colorPickerBtn">#}<img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn" width=90px height=90px>{#</button>#}
+    <div class="colorPicker off"><span class="colorPicker__palette" /></div>
+    {#
     <div class="mainPanel"><br>
         <img src="/{{ app }}/images/LightBulb.png" id="lightBulbImage" class="mainPanel__icon" width=50px height=50px><br><br>
         <label class="mainPanel__labelDeviceName mainPanel__labelDeviceInfo-color-white">{{ light['name'] }}</label><br><br><br><br>
@@ -161,5 +174,6 @@
         <button class="colorPickerBtn"><img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn__icon" width=90px height=90px></button>
         <div class="colorPicker off"><span class="colorPicker__palette" /></div>
     </div>
+    #}
 
 {% endblock %}

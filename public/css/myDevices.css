@@ -2,17 +2,22 @@
 	text-align: center;
 }
 
+btnDevices{
+	height: 60px;
+}
+
+/*
 .btnDevices{
 	display: block;
-	background-color: #46474A;
-    	padding: 0px 5px;
-    	margin: 1px 10%;
-	border-style: solid;
-    	border-width: 1px 0px;
-	border-color: white;
-    	cursor: pointer;
-    	width: 80%;
-    	font-size: 17px;
+	//background-color: #46474A;
+	padding: 0px 5px;
+	margin: 1px 10%;
+	//border-style: solid;
+	//border-width: 1px 0px;
+	//border-color: white;
+	cursor: pointer;
+	width: 80%;
+	font-size: 17px;
 	color: #D6CDCD;
 	vertical-align: middle;
 	text-align: center;
@@ -21,7 +26,9 @@
 
 
 .btnDevices__icon{
-	margin: 10px 10px 10px 10px;
+	//margin: 10px 10px 10px 10px;
+	vertical-align: middle;
+	margin: auto 10px;
 	width: 45px;
 	height: 45px;
 	text-align: left;
@@ -29,11 +36,13 @@
 }
 
 .btnDevices__name{
+	position: relative;
 	vertical-align: middle;
 	margin: 22px 10px 0px 10px;
 	color: white;
 	float: left;
 }
+*/
 
 .mainPanel__labelDevicesInfo{
 	padding-top: 30px;

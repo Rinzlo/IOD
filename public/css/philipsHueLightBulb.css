@@ -13,12 +13,15 @@
 
 .mainPanell__icon{
 	top: 30px;
+
 }
 
 
 .mainPanel__offImage{
-	top: 180px;
+	position: absolute;
+	top: 380px;
 	cursor: pointer;
+	transform: translate(-50%, 0%);
 }
 
 .mainPanel__lightSlider{
@@ -44,12 +47,15 @@
 	margin-left: 20px;
 }
 
+/*
 .colorPickerBtn{
-	background: #46474A;
+	//background: #46474A;
+	opacity: 1.0;
 	border: none;
 }
+*/
 
-.colorPickerBtn__icon{
+.colorPickerBtn{
 	top: 390px;
 	cursor: pointer;
 	margin-right: 10px;
@@ -57,24 +63,27 @@
 	text-align: right;
 }
 
+.colorPickerBtn:hover, .deviceBtns__statIcon:hover{
+	opacity: 0.8;
+}
 .deviceBtns{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+
 .colorPicker{
 	background: #46474A;
 	width: 195px;
 	height: 224px;
 	position: absolute;
-	top: 300px;
-	right: -25%;
+	top: 68%;
+	right: -33%;
 }
 .colorPicker__palette{
 	position: absolute;
 	/* right: 30%;
 	top: 300px;
-	
 	right: -40%; */
 	z-index: 100;
 }

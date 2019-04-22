@@ -33,7 +33,7 @@
                     labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                     datasets : [
                         {
-                            label: "Location1",
+                            label: $('.dropdown-content__1').text(),
                             backgroundColor: "rgba(255, 0, 0, 0.8)",
                             data : [350, 200, 550, 180, 200, 660, 310]
                         }
@@ -41,6 +41,12 @@
 				},
 				responsive: false,
 				options: {
+                    title: {
+                        display: true,
+                        text: 'Amount of Used Power',
+						fontColor: '#fff',
+						fontSize: 24
+                    },
 		            legend:{
 		                labels:{
 		                    fontColor: '#fff'
@@ -81,7 +87,7 @@
             $('.dropdown-content__1').click(function (){
                 config.data.datasets = [
                     {
-                        label: "Location1",
+                        label: $('.dropdown-content__1').text(),
                         backgroundColor: "rgba(255, 0, 0, 0.8)",
                         data : [350, 200, 550, 180, 200, 660, 310]
                     }
@@ -92,7 +98,7 @@
             $('.dropdown-content__2').click(function (){
                 config.data.datasets = [
                     {
-                        label: "Location2",
+                        label: $('.dropdown-content__2').text(),
                         backgroundColor: "rgba(0, 255, 0, 0.8)",
                         data : [100, 200, 120, 440, 260, 600, 520]
                     }
@@ -103,7 +109,7 @@
             $('.dropdown-content__3').click(function (){
                 config.data.datasets = [
                     {
-                        label: "Location3",
+                        label: $('.dropdown-content__3').text(),
                         backgroundColor: "rgba(0, 0, 255, 0.8)",
                         data : [150, 120, 370, 290, 640, 520, 410]
                     }
@@ -111,18 +117,11 @@
                 const chart = new Chart(context, config)
             });
 
-            $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
-            $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
-            //$('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
-            $('nav').css('display', 'none');
-            $('.header__btnNavDrawer').click(function(){
-                {#window.location.href="/{{ app }}/devices/my-devices";#}
+            $('.btnBack').click(function(){
                 window.location.href="/{{ app }}";
             });
 
-            $('.header__btnBack').click(function(){
-                window.location.href="/{{ app }}";
-            });
+            $('.pageTitle').html("Usage Statistics");
 		})
 	</script>
 
@@ -136,7 +135,7 @@
 
 		<div class="navbar">
             <div class="dropdown">
-                <button class="dropbtn" onclick="allDevFunction()">ALL DEVICES
+                <button class="dropbtn" onclick="allDevFunction()">SELECT DEVICES
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <span class="dropdown-content" id="myDropdown">
@@ -147,19 +146,9 @@
             </div>
 		</div>
 
-		<form>
-		</form>
-		<div class="barChartContainer" style="height: 250px; width: 600px; margin: 0 auto;">
+		<div class="barChartContainer" style="height: 400px; width: 600px; margin: 0 auto;">
 			<canvas class="barChartContainer__barChart"></canvas>
 		</div>
-		{#
-		<form action="">
-			<div class="statsBtn">
-				<img src="/{{app}}/images/usageStats-flask.png" id="flaskImage" type="button" onclick="flaskImageBtn(this.form)"><span class="statsTxt">FROM: 11/01 TO 11/20</span>
-			</div>
-		</form>
-		<img src="/{{app}}/images/usageStats-barchart.png" id="barChartImage" width=360px height=320px>
-		#}
 	</table>
 </div>
 

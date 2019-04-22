@@ -1,18 +1,18 @@
 .formatter{
 	/* margin: auto; */
 	text-align: center;
-	width: 100%;
+	width: 90%;
 }
 
 .signUpPanel{
 	position: relative;
 	top: 30%;
-	width: 100%;
+	width: 90%;
 	height: 480px;
-    	transform: translate(0%, -30%);
+	transform: translate(0%, -45%);
 	background-color: #050324;
 	border-radius: 12px;
-	border 2px solid white;
+	border: 2px solid white;
 	text-align: center;
 	opacity: 1.0;
 }

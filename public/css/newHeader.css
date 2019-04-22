@@ -1,0 +1,471 @@
+body, html 
+{
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+/*These are the background properties of header image*/
+.fixed-bg {
+  background-image: url("../Images/Gradient_Title5.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainPanel__copyright{
+  color: yellow;
+  text-align: center;
+  font-size: 15px;
+  //position: absolute;
+  //top: 97%;
+  //bottom: 0;
+  //left: 50%;
+  //transform: translate(-50%, 0%);
+}
+
+body 
+{
+  /* The gradient background image/color used */
+  /* background-image: linear-gradient(to bottom, rgba(130,130,160), rgba(30,30,40)); */
+
+  /* Full height and width of the page */
+  /* height: 100%; 
+  width: 100%; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+    font-family: Calibri light;
+    width: 100wh;
+	height: 100vh;
+	color: #fff;
+  /*the below Animates the background of the page*/
+	background: linear-gradient(-45deg,rgba(130,130,160),rgba(60,60,70),rgba(30,30,40),rgba(60,60,70), rgba(130,130,160));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 40s ease infinite;
+	-moz-animation: Gradient 40s ease infinite;
+	animation: Gradient 40s ease infinite;
+}/*end styles>body*/
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}/*end styles>body>background Gradient Animation*/
+
+/*the class the controls and formats the buttons*/
+/*.button 
+{
+  border: none;
+  color: white;
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  
+  cursor: pointer;
+  width: 85%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+  max-width: 1000px;
+  font-size:2vw;
+  max-height: 150px;
+}  */
+
+/*this colors nad styles the buttons*/
+/* .button3 {background-image: linear-gradient(to right, rgba(110,110,140), rgba(40,40,50));}
+.button1 {background-image: linear-gradient(to right, rgba(110,110,140), rgba(40,40,50));}
+.button2 {background-image: linear-gradient(to right, rgba(110,110,140), rgba(40,40,50));}
+.button4 {background-image: linear-gradient(to right, rgba(110,110,140), rgba(40,40,50));} */
+
+/*This container controls and styles the header image and contains its elements*/
+.headContainer
+{
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  background-attachment: scroll;
+  margin: 15px 15px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 40px rgb(95, 203, 253);
+  color: rgba(255,255,255,.8);
+  border-radius: 25px;
+  overflow:hidden;
+  max-height: 200px;
+  //height: 180px;
+  /*max-width: 1150px;*/
+}
+.headContainer img
+{
+vertical-align: top;
+vertical-align: bottom;
+}
+
+/*this container is for the hamburger menu icon within the above container*/
+.hamburgerButton
+{
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*holds the experimental animated buttons*/
+/* .container3 
+{
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+} */
+
+/*This is a test container for the animated buttons*/
+
+/* .buttonContainer:link 
+{
+  text-decoration: none;
+}
+
+.buttonContainer:visited 
+{
+  text-decoration: none;
+  color: #fff;
+} */
+
+.btnLink{
+    text-decoration: none;
+}
+
+.btnLighting
+{
+  position: relative;
+  background-image: linear-gradient(to right, rgba(110,110,140), rgba(40,40,50));
+  left: 50%;
+  transform: translate(-50%, 0%);
+  overflow:hidden;
+  /* border: none; */
+  color: white; 
+  padding: 2.6%;
+  text-align: center;
+  /* text-decoration: none; */
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  border: 0px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+  //max-width: 920px;
+  //max-height: 300px;
+  font-size:2.3vw;
+  margin: 3% 0%;
+  /*background-attachment: scroll;*/
+
+  color:#fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btnLighting img
+{
+  max-height:90%; 
+  width:auto;
+  position: absolute;
+  left: 10px;
+  top: 5%;
+  border-radius: 8px;
+  //margin: 10px 10px 10px 10px;
+}
+
+.btnLighting:hover
+{
+  color: #ffffff;
+  box-shadow:0px 0px 20px #06b0ff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}/*end styles>button container properties*/
+
+
+/*This is the format for the 3 hamburger menu bars*/
+.hamburgerButtonBar1, .hamburgerButtonBar2, .hamburgerButtonBar3
+{
+  width: 45px;
+  height: 5px;
+  background-color: rgba(0,168,243, 1);
+  margin: 6px 0;
+  transition: 0.4s;
+  box-shadow: 0px 0px 40px rgb(95, 203, 253);
+}
+
+/*The .change functions are accessed by the script for hamburger icon animation*/
+.change .hamburgerButtonBar1
+{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .hamburgerButtonBar2 {opacity: 0;}
+
+.change .hamburgerButtonBar3
+{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*These are allignment functions*/
+.bottom-left 
+{
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+}
+
+.headContainerTopLeft
+{
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+.headContainerTopRight
+{
+  position: absolute;
+  top: 8px;
+  right:  16px;
+}
+
+.bottom-right 
+{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.pageTitle
+{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+}
+
+.left
+{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-20%, -50%);
+  max-height: 50%;
+  max-width: 50%;
+  /* object-fit: contain; */
+}
+
+.right
+{
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  text-shadow: 15px 15px 15px rgba(0, 0, 0, .4);
+  font-size: 0px;
+}/*end styles>alignment functions*/
+
+/* a 
+{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.previous 
+{
+  background-color: rgba(0,168,243, .9);
+  color: rgb(230,230,230);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, .5);
+}
+
+.round 
+{
+  border-radius: 50%;
+} */
+
+/* experimental button with border animation*/
+/* b
+{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate (-50%, 50%);
+  color: #1670f0;
+  padding: 30px 60px;
+  font-size:30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+b:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05)
+} */
+
+/*The below animates the ring that travels around each button*/
+
+
+.btnLighting span:nth-child(1)
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,rgb(30,30,40), #1779ff);
+  animation: animate1 3s linear infinite;
+}
+@keyframes animate1
+{
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%
+  {
+    transform: translateX(100%);
+  }
+}
+
+.btnLighting span:nth-child(2)
+{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(30,30,40), #1779ff);
+  animation: animate2 3s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes animate2
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+
+.btnLighting span:nth-child(3)
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, rgb(30,30,40), #1779ff);
+  animation: animate3 3s linear infinite;
+}
+@keyframes animate3
+{
+  0%
+  {
+    transform: translateX(100%);
+  }
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
+.btnLighting span:nth-child(4)
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, rgb(30,30,40), #1779ff);
+  animation: animate4 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes animate4
+{
+  0%
+  {
+    transform: translateY(100%);
+  }
+  100%
+  {
+    transform: translateY(-100%);
+  }
+}/*end styles>button animation ring*/
+
+
+
+/*The below controles the floating footer band with copyright*/
+#footer {
+  clear: both;
+  border: .5px groove #050505;
+  background: linear-gradient(to right, rgb(30, 30, 40), #1779ff);
+  color: White;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 1vw;
+  margin: 0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
