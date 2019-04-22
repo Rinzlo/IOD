@@ -20,25 +20,25 @@ button:hover{
 	top: 30%;
 	width: 100%;
 	height: 450px;
-    	transform: translate(0%, -150%);
+	transform: translate(0%, -110%);
 	background-color: #050324;
 	border-radius: 12px;
-	border 2px solid white;
+	border: 2px solid white;
 	text-align: center;
 	opacity: 1.0;
 }
 
 
 .back{
-	background: #46474A;
-	border-color: #707070;
+	//background: #46474A;
+	//border-color: #707070;
 	height: 547px;
 	position: relative;
     /* transform: translate(135%, 1%); */
 }
 
 .loginForm__info{
-    	text-align: center;
+	text-align: center;
 	width: 80%;
 	padding: 10px 10px;
 	display: inline-block;

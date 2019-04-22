@@ -14,8 +14,8 @@
                 {#$('.offImage').attr('src', "/{{ app }}/images/On.png");#}
             {#else#}
                 {#$('.offImage').attr('src', "/{{ app }}/images/Off.png");#}
-
-            $('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
+            /*
+            //$('.header__btnBack').attr('src', "/{{ app }}/images/homePage.png");
             $('.header__btnNavDrawer').attr('src', "/{{ app }}/images/Back.png");
             $('.header__btnNavDrawer').removeClass('btnChangeDrawerStats');
             
@@ -23,10 +23,13 @@
             $('.header__btnNavDrawer').click(function(){
                 window.location.href="/{{ app }}/devices/my-devices";
             });
-
-            $('.header__btnBack').click(function(){
-                window.location.href="/{{ app }}";
+            */
+            $('.btnBack').click(function(){
+                window.location.href="/{{ app }}/devices/my-devices";
             });
+
+            $('.pageTitle').html({{ light['name'] }});
+
             $('#offImage').click(function(){
                 if($('#offImage').attr('src') === "/{{ app }}/images/Off.png"){
                     // power on
@@ -45,7 +48,7 @@
                         {# }else{
                             $('#showBrightness').html("Access failed.");
                         } #}
-                        $('#offImage').attr('src', "/{{ app }}/images/On.png");
+                        $('#offImage').attr('src', "/{{ app }}/images/newOn.png");
                     }).fail( (data) => {
                         console.log(data);
                         $('#showBrightness').html("Connection failed");
@@ -68,7 +71,7 @@
                         {# }else{
                             $('#showBrightness').html("Access failed.");
                         } #}
-                        $('#offImage').attr('src', "/{{ app }}/images/Off.png");
+                        $('#offImage').attr('src', "/{{ app }}/images/newOff.png");
                     }).fail( (data) => {
                         console.log(data);
                         $('#showBrightness').html("Connection failed");
@@ -161,7 +164,7 @@
             function slideIn(){
                 $('.colorPicker').css('display', 'block');
                 $('.colorPicker').removeClass('off');
-                $('.colorPicker').animate({'margin-right':'28%'},300).addClass('on');
+                $('.colorPicker').animate({'margin-right':'35%'},300).addClass('on');
             }
 
             function slideOut(){
@@ -171,6 +174,8 @@
                     $('.colorPicker').css('display', 'none');
                 });
             }
+
+            $('.pageTitle').html("Device Operation");
         });
     </script>
 
@@ -178,18 +183,18 @@
 
 {% block body %}
 
-    <div class="mainPanel"><br>
-        <img src="/{{ app }}/images/LightBulb.png" id="lightBulbImage" class="mainPanel__icon" width=50px height=50px><br><br>
+    {#<div class="mainPanel"><br>#}
+        <br><img src="/{{ app }}/images/gradient_light_1.png" id="lightBulbImage" class="mainPanel__icon" width=50px height=50px><br><br>
         <label class="mainPanel__labelDeviceName mainPanel__labelDeviceInfo-color-white">{{ light['name'] }}</label><br><br><br><br>
-        <img id="offImage" class="mainPanel__offImage" src="/{{ app }}/images/Off.png" width=140px height=80px><br><br>
+        <img id="offImage" class="mainPanel__offImage" src="/{{ app }}/images/newOff.png" width=140px height=80px><br><br>
 
         <div class="mainPanel__lightSlider" id="lightSlider"></div><br>
 
         <label id="labelBrightness" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Brightness:&nbsp;</label><span id="showBrightness" class="mainPanel__labelDeviceInfo-color-white"></span><br>
         <label id="labelColor" class="labelMyDevices mainPanel__labelDeviceInfo-color-white">Color:&nbsp;</label><span id="showColor" class="mainPanel__labelDeviceInfo-color-white"></span><br><br>
         <a href="/{{ app }}/Devices/usage-statistics"><img  class="deviceBtns__statIcon" src="/{{ app }}/images/Device_Stats.png" id="usageStats" width=90px height=90px></a>
-        <button class="colorPickerBtn"><img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn__icon" width=90px height=90px></button>
+        {#<button class="colorPickerBtn">#}<img src="/{{ app }}/images/ColorPicker.png" class="colorPickerBtn" width=90px height=90px>{#</button>#}
         <div class="colorPicker off"><span class="colorPicker__palette" /></div>
-    </div>
+    {#</div>#}
 
 {% endblock %}

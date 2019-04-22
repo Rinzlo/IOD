@@ -64,21 +64,21 @@ a{
 
 .mainPanel__btnMenu{
 	width: 80%;
-    	height: 85px;
-    	margin: 0 auto;
-    	padding: 15px 0;
-    	font-size: 20px;
-    	text-decoration: none;
-    	display: block;
-    	text-align: center;
-    	color: #D6CDCD;
-    	background: #606060;
-    	border: 1px solid;
-    	border-color: #938D8D;
+	height: 85px;
+	margin: 0 auto;
+	padding: 15px 0;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #D6CDCD;
+	background: #606060;
+	border: 1px solid;
+	border-color: #938D8D;
 	border-radius: 20px;
 	cursor: pointer;
-    	//-webkit-border-radius: 5px;/* for Safari and Chrome*/
-    	//-moz-border-radius: 5px;/* for Firefox*/
+	//-webkit-border-radius: 5px;/* for Safari and Chrome*/
+	//-moz-border-radius: 5px;/* for Firefox*/
 }
 
 .mainPanel__copyright{

@@ -13,21 +13,25 @@
 /*end header*/
 
 /*container id*/
+
 #container{
-	background: #46474A;
+	//background: #46474A;
 	border-color: #707070;
+	border-style: none;
 	position: relative;
 	top: -25px;
 }
 
 h3{
 	padding-top: 40px;
-	padding-bottom: 40px;
+	//padding-bottom: 40px;
 	color: #D6CDCD;
 	text-align: center;
 	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
+	border-style: none;
+	/*
 	border-width: 1px;
 	border-top-color: #707070;
 	border-top-style: solid;
@@ -37,6 +41,7 @@ h3{
 	border-left-style: hidden;
 	border-right-color: none;
 	border-right-style: hidden;
+	*/
 }
 
 .navbar {
@@ -52,6 +57,7 @@ h3{
   }
   
   .dropdown .dropbtn {
+    transform: translate(-10%, 0%);
 	cursor: pointer;
 	font-size: 16px;  
 	border-color: #938D8D;

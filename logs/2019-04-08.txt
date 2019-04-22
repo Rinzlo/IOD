@@ -56,3 +56,19 @@ Stack trace: #0 [internal function]: Core\Error::errorHandler(2, 'file_get_conte
 #6 /Applications/MAMP/htdocs/web-app/public/index.php(50): Core\Router->dispatch('Devices/my-devi...')
 #7 {main}
 Thrown in '/Applications/MAMP/htdocs/web-app/App/Controllers/Devices.php' on line 93
+[08-Apr-2019 23:58:28 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(53): Core\Router->dispatch('Images/Back_But...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[08-Apr-2019 23:58:28 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(53): Core\Router->dispatch('Images/Gradient...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[08-Apr-2019 23:58:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(53): Core\Router->dispatch('Images/Gradient...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116
+[08-Apr-2019 23:58:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/web-app/public/index.php(53): Core\Router->dispatch('Images/Back_But...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/web-app/Core/Router.php' on line 116

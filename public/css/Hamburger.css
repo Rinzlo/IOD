@@ -1,25 +1,42 @@
 .navDrawer {
-	//width: 300px;
-	width: 80%;
-	height: 667px;
+	width: 70%;
+    height: 100%;
 	transition: all 0.2s;
-	transform: translateX(-250%);
-    	position: relative;
-    	top: 0;
-    	right: 0;
-    	z-index: 1000;
-    	background-color: #333;
+	transform: translateX(-220%);
+    position: absolute;
+    //top: 15px;
+	//bottom: 5px;
+    right: 0;
+    z-index: 1000;
+    background-color: #333;
+	border-radius: 25px;
 }
 
-nav.open {
-	height: 667px;
+
+.navDrawer.open {
+    height: 100%;
+	transform: translateX(-42%);
+	border-radius: 25px;
+}
+
+/*
+header.open {
+	//height: 667px;
+	height: 100%;
+	transform: translateX(50%);
+}
+*/
+
+.html{
 	transform: translateX(0%);
 }
 
+
 .currentUser{
-	height: 150px;
+	height: 224px;
 	background-color: #3434DF;
 	text-align: center;
+	border-radius: 25px 25px 0px 0px;
 }
 
 .currentUser__userName{
@@ -57,13 +74,13 @@ nav.open {
 .btnDrawerMenu{
 	display: block;
 	background-color: #444;
-    	padding: 0px 5px;
-    	margin: 1px 0px;
-    	border: 2px;
+	padding: 0px 5px;
+	margin: 1px 0px;
+	border: 2px;
 	border-color: black;
-    	cursor: pointer;
-    	width: 100%;
-    	font-size: 17px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 17px;
 	vertical-align: middle;
 	text-align: center;
 }
@@ -81,6 +98,8 @@ nav.open {
 	position: absolute;
 	bottom: 0px;
 	margin: 0px;
+	border-radius: 25px;
+	transform: translate(-50%, 0%);
 }
 
 .btnDrawerMenu-color-white:hover{
