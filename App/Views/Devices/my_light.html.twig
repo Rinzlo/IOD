@@ -13,10 +13,10 @@
                 window.location.href="/{{ app }}/devices/my-devices";
             });
 
-            $('.pageTitle').html({{ light['name'] }});
+            {# $('.pageTitle').html({{ light['name'] }}); #}
 
             $('#offImage').click(function(){
-                if($('.mainPenel__toggleButton').attr('src') === "/{{ app }}/images/Off.png"){
+                if($('.mainPanel__toggleButton').attr('src') == "/{{ app }}/images/newOff.png"){
                     // power on
                     $.ajax({
                         type: 'GET',
@@ -33,7 +33,7 @@
                         {# }else{
                             $('#showBrightness').html("Access failed.");
                         } #}
-                        $('.mainPenel__toggleButton').attr('src', "/{{ app }}/images/newOn.png");
+                        $('.mainPanel__toggleButton').attr('src', "/{{ app }}/images/newOn.png");
                     }).fail( (data) => {
                         console.log(data);
                         $('#showBrightness').html("Connection failed");
@@ -56,7 +56,7 @@
                         {# }else{
                             $('#showBrightness').html("Access failed.");
                         } #}
-                        $('.mainPenel__toggleButton').attr('src', "/{{ app }}/images/newOff.png");
+                        $('.mainPanel__toggleButton').attr('src', "/{{ app }}/images/newOff.png");
                     }).fail( (data) => {
                         console.log(data);
                         $('#showBrightness').html("Connection failed");

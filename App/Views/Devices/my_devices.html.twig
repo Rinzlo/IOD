@@ -25,11 +25,9 @@
 
             $('.btnLink').click(function(){
                 var data = $(this).data();
-                console.log(data);
                 if(data.hasOwnProperty('ident'))
                 {
                     var ident = $(this).data("ident")
-                    console.log(ident)
                     $.ajax({
                         type: 'GET',
                         url: "{{iotUrl}}/api/cmd/" + ident + "/auth",
