@@ -6,6 +6,7 @@ namespace App\Controllers;
 
 use App\Config;
 use Core\View;
+use App\Flash;
 
 class Devices extends Authenticated
 {
@@ -61,12 +62,9 @@ class Devices extends Authenticated
         $id = $this->route_params['id'];
 
         $devices = $this->parseDevices();
-
+        
         $light = $devices[$id];
         $light['id'] = $id;
-
-        // var_dump($light);
-        // die();
 
         View::renderTemplate('Devices/my_light.html.twig', [
             'light' => $light,
@@ -80,12 +78,22 @@ class Devices extends Authenticated
         // var_dump($devices);
         // exit();
         $things = [];
-        foreach ($devices as $key => $value) {
-            $things[] = ['id' => $key, 'name' => $value['name']];
-        }
 
+        foreach ($devices as $key => $value) {
+            if(array_key_exists('auth', $value['caps'])) {
+
+                // $things[] = ['id' => $key, 'name' => $value['name']];
+                if(Config::IOT_DEBUG)
+                Flash::addMessage('got one!');
+                $things[] = ['id' => $key, 'name' => $value['name'], 'auth' => null];
+            } else {
+                $things[] = ['id' => $key, 'name' => $value['name']];
+            }
+        }
+        //'api/query/<device_id>/cmd/auth'
         View::renderTemplate('Devices/my_devices.html.twig', [
             'devices' => $things,
+            'iotUrl' => Config::IOT_API
         ]);
     }
 
@@ -98,8 +106,29 @@ class Devices extends Authenticated
     {
         $devices = file_get_contents(Config::IOT_API . '/api/query');
         
-        $devices = json_decode($devices);
-        $devices = json_decode(json_encode($devices), true)['devices'];
+        $devices = json_decode($devices, true)['devices'];
+
+        $needs_auth = array_walk_recursive($devices, function($v, $k) use (&$ids) {
+            if ($k === 'id') {
+                return true;
+            }
+        });
+
+        foreach($devices as $name => $funcs) {
+            $can_name = "[".json_encode($name)."]: ";
+            $func_str = "";
+            foreach($funcs as $func_key => $func_val) {
+                
+                $func_str .= json_encode($func_key).json_encode($func_val);
+                // break;
+            }
+            
+            if(Config::IOT_DEBUG) {
+                Flash::addMessage($can_name.$func_str, "info");
+            }
+
+            
+        }
 
         return $devices;
     }

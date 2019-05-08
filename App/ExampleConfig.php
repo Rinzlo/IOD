@@ -101,4 +101,9 @@ class ExampleConfig
      * @var string
      */
     const IOT_API = 'ipaddress';
+
+    /**
+     * if true, shows flash messages for IOT devices
+     */
+    const IOT_DEBUG = true;
 }

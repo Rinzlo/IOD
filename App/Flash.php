@@ -34,7 +34,7 @@ class Flash
 	 * @param string $message
 	 * @param string $type
 	 */
-	public static function addMessage(string $message, string $type = 'success'): void
+	public static function addMessage(string $message = 'No message.', string $type = 'success'): void
 	{
 		if(! isset($_SESSION['flash_notifications'])){
 			$_SESSION['flash_notifications'] = [];
