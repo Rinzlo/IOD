@@ -8,7 +8,6 @@
 .mainPanel__toggleButton{
 	position: relative;
 	cursor: pointer;
-	transform: translate(-50%, 0%);
 }
 
 .mainPanel__lightSlider{

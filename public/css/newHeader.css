@@ -222,7 +222,12 @@ vertical-align: bottom;
   transition: all 0.2s ease-in;
 }/*end styles>button container properties*/
 
+.btnAuth
+{
 
+  background: linear-gradient(to right, #5798f3, #1778ff71);
+  /* background: #06b0ff; */
+}
 
 
 /*This is the format for the 3 hamburger menu bars*/

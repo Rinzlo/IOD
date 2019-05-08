@@ -37,6 +37,7 @@
                         }
                     }).done((data) => {
                         console.log("success!")
+                        location.reload();
                     }).fail( (data) => {
                         console.log("failure, your should be put down!")
                     })
@@ -53,13 +54,13 @@
         {% for device in devices %}
             {% if device.auth is defined %}
                 <a class="btnLink" data-ident="{{device['id']}}">
-                    <button class="btnLighting btnDevices">
+                    <button class="btnLighting btnDevices btnAuth">
                         <img src="/{{ app }}/images/gradient_light_1.png" class="btnDevices__icon" align="center">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        <span class="btnDevices__name">Sync: {{ device['name'] }}?</span>
+                        <span class="btnDevices__name">Authorize: {{ device['name'] }}?</span>
                     </button>
                 </a>
             {% else %}
