@@ -79,6 +79,7 @@
 	position: absolute;
 	top: 68%;
 	right: -33%;
+	display: none;
 }
 .colorPicker__palette{
 	position: absolute;

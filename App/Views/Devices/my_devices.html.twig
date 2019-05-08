@@ -18,6 +18,27 @@
                 window.location.href="/{{ app }}";
             });
             $('.pageTitle').html("My Devices");
+
+            var tmp = $('.bob')
+            console.log(tmp.attr("data-ident"))
+            console.log(tmp.data("ident"))
+
+            $('.btnLink').click(function(){
+                var ident = $(this).data("ident")
+                console.log(ident)
+                $.ajax({
+                    type: 'GET',
+                    url: "{{iotUrl}}/api/cmd/" + ident + "/auth",
+                    timeout: 5000,
+                    status: {
+                        'deviceid':"{{ device['ident'] }}",
+                    }
+                }).done((data) => {
+                    console.log("success!")
+                }).fail( (data) => {
+                    console.log("failure, your should be put down!")
+                })
+            });
         });
     </script>
 {% endblock %}
@@ -27,16 +48,29 @@
     <!-- <div class="mainPanel"> --><br><br>
         <label class="mainPanel__labelDevicesInfo">Available Device List</label><br><br>
         {% for device in devices %}
-            <a href="/{{ app }}/devices/my-light/{{ device['id'] }}" class="btnLink">
-                <button class="btnLighting btnDevices">
-                    <img src="/{{ app }}/images/gradient_light_1.png" class="btnDevices__icon" align="center">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span class="btnDevices__name">{{ device['name'] }}</span>
-                </button>
-            </a>
+            {% if device.auth is defined %}
+                <a class="btnLink" data-ident="{{device['id']}}">
+                    <button class="btnLighting btnDevices">
+                        <img src="/{{ app }}/images/gradient_light_1.png" class="btnDevices__icon" align="center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="btnDevices__name">Sync: {{ device['name'] }}?</span>
+                    </button>
+                </a>
+            {% else %}
+                <a href="/{{ app }}/devices/my-light/{{ device['id'] }}" class="btnLink">
+                    <button class="btnLighting btnDevices">
+                        <img src="/{{ app }}/images/gradient_light_1.png" class="btnDevices__icon" align="center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="btnDevices__name">{{ device['name'] }}</span>
+                    </button>
+                </a>
+            {% endif %}
         {% endfor %}
     <!-- </div> -->
 

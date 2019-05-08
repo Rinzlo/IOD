@@ -177,23 +177,20 @@ vertical-align: bottom;
   left: 50%;
   transform: translate(-50%, 0%);
   overflow:hidden;
-  /* border: none; */
-  color: white; 
+  border: none;
+  /* color: white;  */
   padding: 2.6%;
   text-align: center;
-  /* text-decoration: none; */
+  
   display: block;
   cursor: pointer;
   width: 80%;
-  border: 0px;
+  
   box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
   border-radius: 8px;
-  //max-width: 920px;
-  //max-height: 300px;
   font-size:2.3vw;
   margin: 3% 0%;
-  /*background-attachment: scroll;*/
 
   color:#fff;
   -moz-transition: all 0.2s ease-in;
@@ -201,6 +198,8 @@ vertical-align: bottom;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+
 
 .btnLighting img
 {
@@ -222,6 +221,8 @@ vertical-align: bottom;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }/*end styles>button container properties*/
+
+
 
 
 /*This is the format for the 3 hamburger menu bars*/
@@ -360,7 +361,7 @@ b:before
 /*The below animates the ring that travels around each button*/
 
 
-.btnLighting span:nth-child(1)
+.btnLighting:hover span:nth-child(1)
 {
   position: absolute;
   top:0;
@@ -382,7 +383,7 @@ b:before
   }
 }
 
-.btnLighting span:nth-child(2)
+.btnLighting:hover span:nth-child(2)
 {
   position: absolute;
   top:0;
@@ -405,7 +406,7 @@ b:before
   }
 }
 
-.btnLighting span:nth-child(3)
+.btnLighting:hover span:nth-child(3)
 {
   position: absolute;
   bottom: 0;
@@ -427,7 +428,7 @@ b:before
   }
 }
 
-.btnLighting span:nth-child(4)
+.btnLighting:hover span:nth-child(4)
 {
   position: absolute;
   top:0;
