@@ -24,20 +24,25 @@
             console.log(tmp.data("ident"))
 
             $('.btnLink').click(function(){
-                var ident = $(this).data("ident")
-                console.log(ident)
-                $.ajax({
-                    type: 'GET',
-                    url: "{{iotUrl}}/api/cmd/" + ident + "/auth",
-                    timeout: 5000,
-                    status: {
-                        'deviceid':"{{ device['ident'] }}",
-                    }
-                }).done((data) => {
-                    console.log("success!")
-                }).fail( (data) => {
-                    console.log("failure, your should be put down!")
-                })
+                var data = $(this).data();
+                console.log(data);
+                if(data.hasOwnProperty('ident'))
+                {
+                    var ident = $(this).data("ident")
+                    console.log(ident)
+                    $.ajax({
+                        type: 'GET',
+                        url: "{{iotUrl}}/api/cmd/" + ident + "/auth",
+                        timeout: 5000,
+                        status: {
+                            'deviceid':"{{ device['ident'] }}",
+                        }
+                    }).done((data) => {
+                        console.log("success!")
+                    }).fail( (data) => {
+                        console.log("failure, your should be put down!")
+                    })
+                }
             });
         });
     </script>
