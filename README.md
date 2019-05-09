@@ -1,11 +1,5 @@
-# Arcaic
-PHP MVC Framework
+# Senior Design Project Imported from bitbucket
+This project is designed to be a Front end and Middle Tier application to interface with our c++ backend which we have as a private repo in bitbucket and was developed by Brian McClelland.
 <p>
-    Make sure to copy the ExampleConfig.php file and change the 
-    current configs for yourself. Also make sure to change your new
-    Config.php class name from ExampleConfig to Config.
-</p>
-<p>
-    For the Config SECRET_KEY, go to https://randomkeygen.com/ and generate a key from
-    CodeIgniter Encryption Keys 256-bit generator.
+    Back end is built from Arcaic (php framework) in my Repo. The front end developers used the Javascript JQuery library.
 </p>
